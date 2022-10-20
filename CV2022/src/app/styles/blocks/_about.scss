@@ -1,0 +1,104 @@
+@import '../../../assets/partials/variables';
+//commons
+@import '../../styles/commons/sections';
+
+.about {
+    
+    //background-color: grey;
+    .row {
+        display: flex;
+        flex-basis: 1;
+        padding: 4px;
+        margin-top: 16px;
+    }
+
+    .col-06 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 60%;
+        padding: 4px;
+        border: 1px solid orange;
+        .col-06-text{
+            max-width: 70%;
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            margin: 8px 0px;
+            border:2px solid red;
+            
+            .col-06--p{
+                padding: 8px;
+                margin-bottom: 4px;
+                text-align: justify;
+            }
+        }
+        .tecnology{
+            padding: 8px;
+            margin-left: 16px;
+            .tecnology__list{
+                display:grid;
+                padding: 4px;
+                margin: 4px;
+                list-style-type:disc;
+                grid-template-columns: 50% 50%;
+            }
+        }
+
+
+    }
+
+    .col-04 {
+        flex-basis: 40%;
+        border: 1px solid red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .layered-card {
+                position: relative;
+        
+                /* Demo */
+                height: 20rem;
+                width: 20rem;
+                border: 1px solid black;
+            }
+        
+            .layered-card::before {
+                background: $morado;
+                content: '';
+        
+                /* Position */
+                top: 0;
+                left: 0;
+                position: absolute;
+                transform: translate(1rem, 1rem);
+        
+                /* Size */
+                height: 100%;
+                width: 100%;
+        
+                /* Display under the main content */
+                z-index: 0;
+            }
+        
+            .layered-card__content {
+                /* Position */
+                left: 0;
+                position: absolute;
+                top: 0;
+        
+                /* Size */
+                height: 100%;
+                width: 100%;
+        
+                z-index: 1;
+        
+                background: #fff;
+
+                .avatar{
+                    max-width: 100%;
+                }
+            }
+    }
+
+}

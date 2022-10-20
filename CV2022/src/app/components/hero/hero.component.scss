@@ -1,5 +1,15 @@
 
+
+//variables
 @import '../../../assets/partials/variables';
+
+//blocks
+@import '../../styles/blocks/hero';
+@import '../../styles/blocks/about';
+@import '../../styles/blocks/experience';
+
+//commons
+@import '../../styles/commons/sections';
 
 .home-sections {
     height: 100%;
@@ -11,114 +21,7 @@
     height: 100vh;//calc(100vh - 62px);
     width: 100%;
     
-        &.hero {
-                background: white;
-                display: flex;
-                justify-content: center;
-            .row {
-                flex-basis: 1;
-                display: flex;
-                width: 100%;
-                padding: 8px;
-                margin: 8px 4px 0px 4px;
-                justify-content: center;
-                border:1px solid red;
-                
-                .col-06 {
-                    flex-basis: 60%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items:center;
-                    text-align: left;
-                    border:1px solid blue;
-                    .left-column-text{
-                        border: 1px solid black;
-                        padding: 16px;
-                    }
-                    .left-column-hi{
-                        text-align: left;
-                        font-size: 2em;
-                        font-family: $poppins;
-                        padding: 4px;
-                        margin-bottom: 8px;
-                        border:1px solid brown;
-                    }
-                    .left-column-title{
-                        font-size: 3em;
-                        font-family: $gochi;
-                        padding: 4px;
-                        margin-bottom: 8px;
-                        border:1px solid tomato,
-                    }
-                    .left-column-description{
-                        font-size: 2em;
-                        font-weight: 700;
-                        font-family: $poppins;
-                        padding: 4px;
-                        background: rgb(169, 0, 252);
-                        background: linear-gradient(180deg, rgba(169, 0, 252, 1) 0%, rgba(121, 9, 116, 1) 38%, rgba(203, 160, 201, 1) 88%, rgba(255, 255, 255, 1) 100%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
+    }
 
-
-                }
-                
-                .col-04 {
-                    flex-basis: 40%;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-right: 16px;
-                    align-items: center;
-                    border:1px solid green;
-                    .social-media {
-                        padding: 8px;
-                        list-style: none;
-                        text-decoration: none;
-                        .fab{
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-        &.about{
-        //background-color: grey;
-            .row{
-                display: flex;
-                flex-basis: 1;
-                padding: 4px;
-                margin-top: 16px;
-            }
-            .col-06{
-                flex-basis: 60%;
-                padding: 4px;
-                border:1px solid orange;
-                
-
-
-
-
-            }
-
-            .col-04{
-                flex-basis:40%;
-                border:1px solid red;
-            }
-            
-        }
-        &.experience{
-        background-color: darkgrey;
-        }
     
-        
-    
-  
-
-}
-
-
-
-
 }
