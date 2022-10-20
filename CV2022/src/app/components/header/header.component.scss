@@ -1,0 +1,53 @@
+@import '../../../assets/partials/variables';
+
+.header-wrapper{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 8px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px;
+        z-index: 1;
+}
+
+.header__header {
+    //position: sticky;
+    //top:0;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+    padding: 16px;
+    font-family: $poppins;
+    
+    .header-list{
+        display: flex;
+        
+        .header-list__item{
+            list-style: none;
+            text-transform: capitalize;
+            margin: 0 8px;
+        }
+        .header-list__item__a{
+            position: relative;
+            text-decoration: none;
+            color:$black;
+        }
+        .header-list__item__a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            left: 0;
+            bottom: -4px;
+            transition: 0.3s ease;
+        }
+        .header-list__item__a:hover:after{
+            width: 100%;
+            background-color: $morado;
+        }
+
+
+
+    }
+}

@@ -1,1 +1,37 @@
-<p>header works!</p>
+<nav class="header-wrapper">
+  <header class="header__header">
+    <div class="logo">logo</div>
+    <div class="header-items">
+      <ul class="header-list">
+        <li class="header-list__item">
+          <a
+            class="header-list__item__a"
+            routerLinkActive="active"
+            [routerLink]="['/home']"
+            href="#"
+            >home</a
+          >
+        </li>
+        <li class="header-list__item">
+          <a class="header-list__item__a" routerLinkActive="active" href="#"
+            >about</a
+          >
+        </li>
+        <li class="header-list__item">
+          <a class="header-list__item__a" routerLinkActive="active" href=""
+            >experience</a
+          >
+        </li>
+        <li class="header-list__item">
+          <a
+            class="header-list__item__a"
+            routerLinkActive="active"
+            [routerLink]="['/contact']"
+            href=""
+            >contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </header>
+</nav>
