@@ -45,8 +45,8 @@
               En estos últimos años he completado mi curiosidad y formación con
               dos master universitarios relacionados con este mundo:
               <span>Master Full Stack Developer </span> y
-              <span>Master en Data Science. </span> Ahora mismo trabajo una de
-              las empresas referentes en el mundo retail en España en la
+              <span>Master en Data Science. </span> Ahora mismo trabajo en una
+              de las empresas referentes en el mundo retail en España en la
               división de compras de electrónica: El Corte Inglés .
             </p>
           </div>
@@ -72,6 +72,52 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-03">
+          <div class="col-03-card">
+            <i class="fa-solid fa-code fa-2x"></i>
+            <h3 class="col-03-card__title">Master Full Stack Developer</h3>
+            <p class="col-03-card__p">Marzo 2022 - Diciembre 2022</p>
+            <p class="col-03-card__p">UNIR</p>
+            <ul class="col-03-card__list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascrit</li>
+              <li>Angular</li>
+              <li>Node Js</li>
+              <li>Express</li>
+              <li>Mongo DB</li>
+              <li>My SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-03">
+          <div class="col-03-card">
+            <i class="fa-solid fa-chart-column fa-2x"></i>
+            <h3 class="col-03-card__title">Master Data Science</h3>
+            <p class="col-03-card__p">Enero 2020 - Julio 2021</p>
+            <p class="col-03-card__p">UNED</p>
+            <ul class="col-03-card__list">
+              <li>Python</li>
+              <li>R</li>
+              <li>Machine Learning</li>
+              <li>Prepocesamiento de datos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-03">
+          <div class="col-03-card">
+            <i class="fa-solid fa-user-graduate fa-2x"></i>
+            <h3 class="col-03-card__title">
+              Licenciado en Administración <br />
+              y dirección de empresas
+            </h3>
+            <p class="col-03-card__p">2014</p>
+            <p class="col-03-card__p">Universidad Complutense de Madrid</p>
+            <p class="col-03-card__p">Especialidad en dirección</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="home-sections__section experience">
@@ -79,15 +125,62 @@
     <article class="cards-container">
       <div class="card">
         <!-- Cover -->
-        <div class="card__cover"></div>
+        <div class="card__cover">
+          <img src="../../../assets/images/full stack.jpg" alt="" />
+        </div>
 
         <!-- Content -->
         <div class="card__content">
-          <h4>Full Stack Developer</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            ullam omnis debitis maxime corrupti excepturi.
+          <h4 class="card__content__title">Full Stack Developer</h4>
+          <p class="card__content__resume">
+            Actualmente estoy trabajando como full stack developer freelance,
+            desarrollando varios proyectos.
           </p>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn-detalle" [routerLink]="['/viewExperience', 1]">
+            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <!-- Cover -->
+        <div class="card__cover">
+          <img src="../../../assets/images/full stack.jpg" alt="" />
+        </div>
+
+        <!-- Content -->
+        <div class="card__content">
+          <h4 class="card__content__title">Pricing Analyst</h4>
+          <p class="card__content__resume">
+            Actualmente soy el responsable del departamento de pricing de
+            electrónica en el Corte Inglés.
+          </p>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn-detalle" [routerLink]="['/viewExperience', 1]">
+            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <!-- Cover -->
+        <div class="card__cover">
+          <img src="../../../assets/images/full stack.jpg" alt="" />
+        </div>
+
+        <!-- Content -->
+        <div class="card__content">
+          <h4 class="card__content__title">Merchandise Senior</h4>
+          <p class="card__content__resume">
+            Actualmente soy el responsable de la planificación del departamento
+            de compras de informática, en el Corte Inglés.
+          </p>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn-detalle" [routerLink]="['/viewExperience', 1]">
+            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+          </button>
         </div>
       </div>
     </article>

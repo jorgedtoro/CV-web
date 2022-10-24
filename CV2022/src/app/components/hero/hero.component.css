@@ -1,0 +1,344 @@
+.hero {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .row {
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 4px 0px 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
+}
+
+.hero .row .col-06 {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  border: 1px solid blue;
+}
+
+.hero .row .col-06 .left-column-text {
+  border: 1px solid black;
+  padding: 16px;
+}
+
+.hero .row .col-06 .left-column-hi {
+  text-align: left;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  padding: 4px;
+  margin-bottom: 8px;
+  border: 1px solid brown;
+}
+
+.hero .row .col-06 .left-column-title {
+  font-size: 3em;
+  font-family: "Gochi Hand", cursive;
+  padding: 4px;
+  margin-bottom: 8px;
+  border: 1px solid tomato;
+}
+
+.hero .row .col-06 .left-column-description {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  padding: 4px;
+  background: #a900fc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a900fc), color-stop(38%, #790974), color-stop(88%, #cba0c9), to(white));
+  background: linear-gradient(180deg, #a900fc 0%, #790974 38%, #cba0c9 88%, white 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .row .col-04 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid green;
+}
+
+.hero .row .col-04 .social-media {
+  padding: 8px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hero .row .col-04 .social-media .fab {
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 3em;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  padding: 4px;
+  margin-top: 16px;
+  font-size: 3em;
+  font-family: "Gochi Hand", cursive;
+}
+
+.about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  padding: 4px;
+  margin-top: 16px;
+}
+
+.about .col-06 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 4px;
+  border: 1px solid orange;
+}
+
+.about .col-06 .col-06-text {
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4px;
+  margin: 8px 0px;
+  border: 2px solid red;
+}
+
+.about .col-06 .col-06-text .col-06--p {
+  padding: 8px;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+.about .col-06 .tecnology {
+  padding: 8px;
+  margin-left: 16px;
+}
+
+.about .col-06 .tecnology .tecnology__list {
+  display: -ms-grid;
+  display: grid;
+  padding: 4px;
+  margin: 4px;
+  list-style-type: disc;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.about .col-04 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .col-04 .layered-card {
+  position: relative;
+  /* Demo */
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid black;
+}
+
+.about .col-04 .layered-card::before {
+  background: #a900fc;
+  content: '';
+  /* Position */
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translate(1rem, 1rem);
+          transform: translate(1rem, 1rem);
+  /* Size */
+  height: 100%;
+  width: 100%;
+  /* Display under the main content */
+  z-index: 0;
+}
+
+.about .col-04 .layered-card__content {
+  /* Position */
+  left: 0;
+  position: absolute;
+  top: 0;
+  /* Size */
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+}
+
+.about .col-04 .layered-card__content .avatar {
+  max-width: 100%;
+}
+
+.experience {
+  background-color: white;
+}
+
+.experience .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+}
+
+.experience .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4px;
+  margin-left: 16px;
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
+
+.experience .card__cover {
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.experience .card__cover img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.experience .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.experience .card__content__title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.experience .card__content__resume {
+  margin: 8px 0;
+}
+
+.experience .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+}
+
+.experience .card__footer .btn-detalle {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  width: 40%;
+  color: grey;
+  background-color: #a900fc;
+  border-radius: 8px;
+  background: #ffffff;
+  -webkit-box-shadow: inset 12px 12px 24px #d6d6d6, inset -12px -12px 24px #ffffff;
+          box-shadow: inset 12px 12px 24px #d6d6d6, inset -12px -12px 24px #ffffff;
+}
+
+.experience .card__footer .btn-detalle span {
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+.section-title {
+  font-size: 3em;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  padding: 4px;
+  margin-top: 16px;
+  font-size: 3em;
+  font-family: "Gochi Hand", cursive;
+}
+
+.home-sections {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-sections .home-sections__section {
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=hero.component.css.map */

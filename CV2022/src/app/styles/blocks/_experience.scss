@@ -1,14 +1,98 @@
+
+@import '../../../assets/partials/variables';
+
+
 .experience {
-     background-color: lightgray;
+    //  background-color: $greyLight-1;
     .cards-container{
         display:flex;
-        margin-top: 16px;
-
+        justify-content: center;
+        margin: 16px;
+     
     }
     .card{
+        display: flex;
+        flex-direction: column;
         padding: 4px;
-        border:1px solid green;
+        margin-left: 16px;
+        // border:1px solid lightgray;
+        border-radius: 8px;
+        // background: $greyLight-1;
+        box-shadow: .8rem .8rem 1.4rem $greyLight-2,
+                -.2rem -.2rem 1.8rem $white;
+        width: 400px;
+        
+   
+        &__cover{
+            padding: 8px;
+            margin: 8px 0;
+            height: 50%;
+            
+            img{
+                max-width: 100%;
+                border-radius:6px;
+            }
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            padding: 16px;
+            margin: 8px 0;
+
+            &__title{
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: $poppins;
+                margin-bottom: 8px;
+            }
+           &__resume{
+                margin: 8px 0;
+                font-size: 1.1rem;
+                color: $greyDark;
+            }
+        }
+        &__footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px;
+            padding:8px;
+            .btn{
+                width: 40%;
+                height: 3rem;
+                border-radius: 1rem;
+                box-shadow: $shadow;
+                border:none;
+                justify-self: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom:0;
+                cursor: pointer;
+                transition: .3s ease;
+                font-size: 1.25rem;
+                
+            }
+            .btn-detalle{
+               color: $greyDark;
+               background: $white;
+                &:hover {
+                    color: $morado;
+                }
+                
+                &:active {
+                    box-shadow: $inner-shadow;
+                }
+            }
+            
+                       
+                    
+        }
     }
+}
+    
 
 
- }
+ 

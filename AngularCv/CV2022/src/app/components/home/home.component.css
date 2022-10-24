@@ -1,0 +1,26 @@
+.home {
+  height: 100%;
+}
+
+.home .home__section {
+  /* Take full size */
+  height: 100%;
+  width: 100vw;
+  /* Stick to the top */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.home .hero {
+  background-color: papayawhip;
+}
+
+.home .about {
+  background-color: lightgray;
+}
+
+.home .proyectos {
+  background-color: darkgrey;
+}
+/*# sourceMappingURL=home.component.css.map */

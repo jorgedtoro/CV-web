@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;CAuBhB;;AAxBD,AAEI,gBAFY,CAEZ,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,aAAa;EAC9B,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,iBAAiB;EAC/B,gBAAgB,ECXX,OAAO;EDYZ,OAAO,EAAE,IAAI;EACb,WAAW,ECVV,QAAQ,EAAE,UAAU;CDWxB;;AAZL,AAaI,gBAbY,CAaZ,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAQrB;;AAvBT,AAgBQ,gBAhBQ,CAaZ,eAAe,CAGX,cAAc,CAAA;EACV,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,QAAQ;EACjB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,GAAG;EACd,eAAe,EAAE,IAAI;CACpB",
+    "sources": [
+        "main-nav.component.scss",
+        "../../../assets/partials/_variables.scss"
+    ],
+    "names": [],
+    "file": "main-nav.component.css"
+}
