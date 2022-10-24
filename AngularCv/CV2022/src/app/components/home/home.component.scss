@@ -1,0 +1,24 @@
+.home {
+    height: 100%;
+
+    // overflow: scroll;
+
+    .home__section {
+        /* Take full size */
+        height: 100%;
+        width: 100vw;
+    
+        /* Stick to the top */
+        position: sticky;
+        top: 0
+    }
+    .hero{
+        background-color: papayawhip;
+    }
+    .about{
+        background-color: lightgray;
+    }
+    .proyectos{
+        background-color: darkgrey;
+    }
+}

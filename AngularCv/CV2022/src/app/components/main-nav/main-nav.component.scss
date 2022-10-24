@@ -1,0 +1,30 @@
+@import '../../../assets/partials/variables';
+
+.sideBar-wrapper{
+    display: flex;
+    .sideBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        width: 150px;
+        border-right: 1px solid #D7DBDD;
+        background-color: $base_color;
+        padding: 10px;
+        font-family: $roboto;
+    }
+    .sideBar__items {
+        display: flex;
+        flex-direction: column;
+        .sideBar__item{
+            cursor: pointer;
+            padding: 5px 10px;
+            color: #ffffff;
+            font-size: 1em;
+            text-decoration: none;
+            }
+        }
+}
+
+
+    
