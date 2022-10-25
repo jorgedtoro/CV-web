@@ -4,6 +4,30 @@
     background: white;
     display: flex;
     justify-content: center;
+    
+    //waves
+    .custom-shape-divider-bottom-1666687268 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        
+            svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 288px;
+                transform: rotateY(180deg);
+            }
+        
+            .shape-fill {
+                fill: #BD10E0;
+            }
+        }
+    
 
     .row {
         flex-basis: 1;
@@ -12,7 +36,7 @@
         padding: 8px;
         margin: 8px 4px 0px 4px;
         justify-content: center;
-        border: 1px solid red;
+        // border: 1px solid red;
 
         .col-06 {
             flex-basis: 60%;
@@ -21,10 +45,10 @@
             justify-content: center;
             align-items: center;
             text-align: left;
-            border: 1px solid blue;
+            // border: 1px solid blue;
 
             .left-column-text {
-                border: 1px solid black;
+                // border: 1px solid black;
                 padding: 16px;
             }
 
@@ -34,19 +58,19 @@
                 font-family: $poppins;
                 padding: 4px;
                 margin-bottom: 8px;
-                border: 1px solid brown;
+                // border: 1px solid brown;
             }
 
             .left-column-title {
-                font-size: 3em;
+                font-size: 5.5em;
                 font-family: $gochi;
                 padding: 4px;
                 margin-bottom: 8px;
-                border: 1px solid tomato,
+                // border: 1px solid tomato,
             }
 
             .left-column-description {
-                font-size: 2em;
+                font-size: 3em;
                 font-weight: 700;
                 font-family: $poppins;
                 padding: 4px;
@@ -65,7 +89,7 @@
             justify-content: flex-end;
             margin-right: 16px;
             align-items: center;
-            border: 1px solid green;
+            // border: 1px solid green;
 
             .social-media {
                 padding: 8px;
@@ -74,6 +98,7 @@
 
                 .fab {
                     text-decoration: none;
+                    color:black;
                 }
             }
         }
