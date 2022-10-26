@@ -15,20 +15,54 @@
           <!-- The title -->
           <div class="timeline__title">
             <h2>
-              Responsable del departamento de Pricing
-              <span>Noviembre 2016--Actualidad</span>
+              {{ dinamicText }}
+              <span>{{ period }}</span>
             </h2>
 
-            <p class="timeline__company">Empresa: El corte Inglés</p>
+            <p class="timeline__company">Empresa: {{ empresa }}</p>
           </div>
         </div>
 
         <!-- The description -->
         <div class="timeline__desc">
           <p>
-            Actualmente soy el responsable del departamento de pricing de la
-            división de Electrónica en el Corte Inglés.
+            {{ description }}
           </p>
+          <div class="timeline__desc__responsability">
+            <h3>Responsabilidades:</h3>
+            <ul class="responsabilities">
+              <li>Análisis de resultados y toma de decisiones.</li>
+              <li>
+                Diseño y estandarización de informes necesarios para la toma de
+                decisiones
+              </li>
+              <li>
+                Automatización de procesos y creación de informes con el
+                objetivo de dar visibilidad de los CPI
+              </li>
+              <li>
+                Utilización de herramientas de GFK (Retal Scout, Retail
+                Intelligence) y de IBM (Demandtec) para la consecución de los
+                objetivos de la dirección y el seguimiento de la competencia de
+                precios.
+              </li>
+              <li>Seguimiento táctico semanal de productos del Hitlist.</li>
+              <li>
+                Supervisión y ayuda de mejora en las herramientas de GFK
+                (control de incorrect Match, feed, adecuación)
+              </li>
+              <li>
+                Seguimiento de índices de competencia en catálogos y ofertas
+                para la rentabilización de los objetivos.
+              </li>
+            </ul>
+          </div>
+          <div class="tecnologies">
+            <h3>Tecnologías que uso</h3>
+            <ul class="tecnologies__list">
+              <li *ngFor="let tecno of tecnology">{{ tecno }}</li>
+            </ul>
+          </div>
         </div>
       </div>
 

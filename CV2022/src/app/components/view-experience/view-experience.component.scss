@@ -6,67 +6,125 @@
     margin-top: 164px;
     margin-left: 64px;
     font-family: $poppins;
-}
+    
 
-.timeline__line {
-    /* Border */
-    border-right: 2px solid #d1d5db;
+    &__line {
+        /* Border */
+        border-right: 2px solid #d1d5db;
+    
+        /* Positioned at the left */
+        left: 0.75rem;
+        position: absolute;
+        top: 0px;
+    
+        /* Take full height */
+        height: 100%;
+    }
 
-    /* Positioned at the left */
-    left: 0.75rem;
-    position: absolute;
-    top: 0px;
+    &__items {
+        /* Reset styles */
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 2rem;
+    }
 
-    /* Take full height */
-    height: 100%;
-}
-
-.timeline__items {
-    /* Reset styles */
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.timeline__item {
-    margin-bottom: 8px;
-}
-
-.timeline__top {
-    /* Center the content horizontally */
-    align-items: center;
-    display: flex;
-}
-
-.timeline__circle {
-    /* Rounded border */
-    background-color: #d1d5db;
-    border-radius: 9999px;
-
-    /* Size */
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.timeline__title {
-    /* Take available width */
-    flex: 1;
-    margin-left: 0.5rem;
-    h2{
-        font-size: 2rem;
+    &__item {
         margin-bottom: 8px;
-        span{
-            font-size: 1.5rem;
-            color: $morado;
+    }
+    
+    &__top {
+        /* Center the content horizontally */
+        align-items: center;
+        display: flex;
+    }
+
+    &__circle {
+        /* Rounded border */
+        background-color: #d1d5db;
+        border-radius: 9999px;
+        margin-left: -2rem;
+        /* Size */
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    &__title {
+        /* Take available width */
+        flex: 1;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        h2{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            span{
+                font-size: 1.5rem;
+                color: $morado;
+            }
+        }
+        .timeline__company{
+            margin-bottom: 8px;
+            font-size:1.2rem;
         }
     }
-    .timeline__company{
-        margin-bottom: 8px;
-        font-size:1.2rem;
+
+
+    &__desc {
+        /* Make it align with the title */
+        margin-left: 2rem;
+        p{
+            margin-bottom: 2rem;
+            font-size: 1.2;
+        }
+        &__responsability{
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            h3{
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+            }
+            .responsabilities{
+                margin-left: 1rem;
+               list-style-type: disc; 
+               li{
+                margin-bottom: 1rem ;
+               }
+            }
+        }    
     }
+    .tecnologies{
+        width: 50%;
+        border-radius:6px;
+        margin-left: 1rem;
+        padding: 0.5rem;
+        // border:1px solid black;
+        box-shadow:$shadow;
+        h3{
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
+        &__list{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            li{
+                text-align:left;
+                list-style-type: disc;
+                padding: 1rem;
+                margin-left: 3rem;
+                // justify-self: center;
+            }
+
+        }
+    }
+
+
+
+
 }
 
-.timeline__desc {
-    /* Make it align with the title */
-    margin-left: 2rem;
-}
+
+
+
+
