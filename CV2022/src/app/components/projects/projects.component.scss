@@ -1,0 +1,103 @@
+@import '../../../assets/partials/variables';
+
+.filter{
+    margin-top: 90px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    &-btn{
+        padding: 8px;
+        margin: 4px;
+        font-family: $poppins;
+        font-size: 1.1rem;
+        box-shadow: .8rem .8rem 1.4rem $greyLight-2,
+                -.2rem -.2rem 1.8rem $white;
+        border: 1px solid lightgray;
+        border-radius: 6px;
+        background-color: white;
+        transition: 1s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: #CF6390;
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+.projects-wrapper{
+    margin-top: 60px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card{
+        font-family: $poppins;
+        margin: 0.5rem;
+        border: 1px solid lightgray;
+        flex-basis:25%;
+        border-radius: 6px;
+        box-shadow: $shadow;
+        
+        &__img{
+            margin-bottom: 1rem;
+            img{
+                max-width: 100%;
+                border-radius: 6px;
+
+            }
+        }
+        &__content{
+            padding: 1rem;
+            &-title{
+                font-size: 1.5rem;
+                text-align: start;
+                margin-bottom: 0.5rem;
+                
+            }
+            .tecnologies{
+                display:flex;
+                justify-content: flex-end;
+                color:$morado;
+                font-weight: bold;
+                :first-child{
+                    color: #3E54A3;
+                    font-weight: bold;
+                }
+                :last-child{
+                    color: #CF6390;
+                    font-weight: bold;
+                }
+                li{
+                    margin:0.5rem 1rem;
+                }
+                
+            }
+            p {
+                color: $greyDark;
+                margin: 1rem;
+                line-height: 1.5;
+            }
+        }
+
+        &__footer{
+            display: flex;
+            justify-content: center;
+            // border: 1px solid green;
+            &-btn{
+                padding: 0.5rem;
+                border:none;
+                margin-bottom: 0.5rem;
+                background-color: white;
+                cursor:pointer;
+                border-radius: 5rem;
+                :hover{
+                    transform: scale(1.05);
+                    color:$morado;
+                }
+            }
+        }
+    }
+
+}

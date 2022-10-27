@@ -1,1 +1,26 @@
-<p>projects works!</p>
+<section class="filter">
+  <button class="filter-btn">Todos</button>
+  <button class="filter-btn">Categoria</button>
+  <button class="filter-btn">Experience</button>
+</section>
+<section class="projects-wrapper">
+  <div class="card" *ngFor="let project of projects">
+    <div class="card__img">
+      <img [src]="project.image" alt="" />
+    </div>
+    <div class="card__content">
+      <div class="card__content-title">
+        {{ project.title }}
+      </div>
+      <ul class="tecnologies">
+        <li *ngFor="let item of project.tecnologies">{{ item }}</li>
+      </ul>
+      <p>{{ project.resume }}</p>
+    </div>
+    <div class="card__footer">
+      <button class="card__footer-btn">
+        <i class="fa-regular fa-circle-play fa-2x"></i>
+      </button>
+    </div>
+  </div>
+</section>

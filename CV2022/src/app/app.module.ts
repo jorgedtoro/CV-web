@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ViewExperienceComponent } from './components/view-experience/view-experience.component';
+import { ProjectViewComponent } from './components/project-view/project-view.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ViewExperienceComponent } from './components/view-experience/view-exper
     HeaderComponent,
     ContactComponent,
     ViewExperienceComponent,
+    ProjectViewComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -31,30 +31,7 @@
           <div class="timeline__desc__responsability">
             <h3>Responsabilidades:</h3>
             <ul class="responsabilities">
-              <li>Análisis de resultados y toma de decisiones.</li>
-              <li>
-                Diseño y estandarización de informes necesarios para la toma de
-                decisiones
-              </li>
-              <li>
-                Automatización de procesos y creación de informes con el
-                objetivo de dar visibilidad de los CPI
-              </li>
-              <li>
-                Utilización de herramientas de GFK (Retal Scout, Retail
-                Intelligence) y de IBM (Demandtec) para la consecución de los
-                objetivos de la dirección y el seguimiento de la competencia de
-                precios.
-              </li>
-              <li>Seguimiento táctico semanal de productos del Hitlist.</li>
-              <li>
-                Supervisión y ayuda de mejora en las herramientas de GFK
-                (control de incorrect Match, feed, adecuación)
-              </li>
-              <li>
-                Seguimiento de índices de competencia en catálogos y ofertas
-                para la rentabilización de los objetivos.
-              </li>
+              <li *ngFor="let respon of responsabilidades">{{ respon }}</li>
             </ul>
           </div>
           <div class="tecnologies">
@@ -62,6 +39,82 @@
             <ul class="tecnologies__list">
               <li *ngFor="let tecno of tecnology">{{ tecno }}</li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat other items -->
+    </div>
+
+    <!-- second time line merchan -->
+    <!-- Left vertical line -->
+    <div *ngIf="id === '3'" class="timeline-wrapper">
+      <div class="timeline__line"></div>
+      <!-- The timeline items timeline -->
+      <div class="timeline__items">
+        <!-- Each timeline item -->
+        <div class="timeline__item">
+          <!-- The circle and title -->
+          <div class="timeline__top">
+            <!-- The circle -->
+            <div class="timeline__circle"></div>
+            <!-- The title -->
+            <div class="timeline__title">
+              <h2>
+                Desarrollador de herramientas en visual basic application y SAS.
+                <span>2014 -- 2016</span>
+              </h2>
+              <p class="timeline__company">Empresa: {{ empresa }}</p>
+            </div>
+          </div>
+          <!-- The description -->
+          <div class="timeline__desc">
+            <p>
+              Desarrollo e implementación de programas que mejorasen los flujos
+              de trabajo. Análisis de datos.
+            </p>
+            <div class="timeline__desc__responsability">
+              <h3>Responsabilidades:</h3>
+              <ul class="responsabilities">
+                <li *ngFor="let respon of responsabilidadesDev">
+                  {{ respon }}
+                </li>
+              </ul>
+            </div>
+            <div class="tecnologies">
+              <h3>Tecnologías que usé</h3>
+              <ul class="tecnologies__list">
+                <li *ngFor="let tecno of tecnologyDev">{{ tecno }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__line"></div>
+      <!-- The timeline items timeline -->
+      <div class="timeline__items">
+        <!-- Each timeline item -->
+        <div class="timeline__item">
+          <!-- The circle and title -->
+          <div class="timeline__top">
+            <!-- The circle -->
+            <div class="timeline__circle"></div>
+            <!-- The title -->
+            <div class="timeline__title">
+              <h2>
+                Analista de datos.
+                <span>Marzo 2014 -- Nov. 2014</span>
+              </h2>
+              <p class="timeline__company">Empresa: Prosegur</p>
+            </div>
+          </div>
+          <!-- The description -->
+          <div class="timeline__desc">
+            <p>
+              Analista de datos en el departamento de vigilancia móvil.
+              Desarrollo de informes en Excel y creación de macros en VBA.
+            </p>
           </div>
         </div>
       </div>

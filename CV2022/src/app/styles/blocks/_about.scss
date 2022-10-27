@@ -68,25 +68,33 @@
                 padding:4px;
                 margin-left: 20px;
                 border: 1px solid $greyLight-2;
+            
+                &::before {
+                    background-color: $greyLight-2;
+                    content: '';
+            
+                    /* Position */
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    transform: translate(1rem, 1rem);
+            
+                    /* Size */
+                    height: 100%;
+                    width: 100%;
+            
+                    /* Display under the main content */
+                    z-index: 0;
+                }
+                &:hover::before{
+                    background-color: $morado;
+                    transform: scale(1.05);
+                }
+                
+            
+            
             }
         
-            .layered-card::before {
-                background: $morado;
-                content: '';
-        
-                /* Position */
-                top: 0;
-                left: 0;
-                position: absolute;
-                transform: translate(1rem, 1rem);
-        
-                /* Size */
-                height: 100%;
-                width: 100%;
-        
-                /* Display under the main content */
-                z-index: 0;
-            }
         
             .layered-card__content {
                 /* Position */
