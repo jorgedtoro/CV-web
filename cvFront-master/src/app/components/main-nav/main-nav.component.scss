@@ -1,0 +1,62 @@
+@import '../../../assets/partials/variables';
+
+.sidenav-container {
+  height: 100%;
+  .sidenav {
+	background-color: $base_color;
+	width: 200px;
+	border-right: 2px solid $acento;
+    .mat-toolbar {
+	  background: inherit;
+	  &:mat-primary {
+       top: 0;
+       z-index: 1;
+    }
+	}
+    .menu{
+      list-style: none;
+	  width: 100%;
+	  padding: {
+		  top: 60%;
+	  }
+      li{
+        text-align: center;
+        a{
+          display: block;
+		  padding: 20px 0px 20px 0px; 
+          text-decoration: none;
+		  font-size: 120%;
+		  background-color: $base_color;
+		  color: $acento;
+		  border-bottom: 2px solid;
+		  border-color: $base_color;
+		  width: 80%;
+		  margin: 0 auto;
+		  transition: .5s border-bottom;
+		  &:hover{
+			border-color: $acento;
+		}
+		  
+		}
+		
+      }
+    }
+  }
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 64px;
+  }
+}
+
+@media(min-width: 500px)
+{
+	.sidenav-container {
+		.mat-toolbar-row, .mat-toolbar-single-row {
+			height: 0px;
+		}
+	}
+}
+
+
+
+
+

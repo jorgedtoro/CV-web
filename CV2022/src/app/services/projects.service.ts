@@ -16,6 +16,6 @@ export class ProjectsService {
     return this.arrProjects;
   }
   getProject(id: number) {
-    this.arrProjects.find((project) => project.id === id);
+    return this.arrProjects.find((project) => project.id === id);
   }
 }

@@ -18,7 +18,7 @@
       <p>{{ project.resume }}</p>
     </div>
     <div class="card__footer">
-      <button class="card__footer-btn">
+      <button class="card__footer-btn" [routerLink]="['/projects', project.id]">
         <i class="fa-regular fa-circle-play fa-2x"></i>
       </button>
     </div>
