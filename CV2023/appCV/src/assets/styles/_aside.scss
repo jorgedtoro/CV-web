@@ -1,0 +1,48 @@
+@import '../styles/commons/commons_dir';
+
+.aside{
+    padding: 1rem;
+    background-color: $aside-background-color;
+    border-radius: 1rem 0 0 1rem;
+    color: white;
+    &-head{
+        padding: 1rem;
+        margin-bottom: 4rem;
+        &-content{
+            gap:3rem;
+            display: flex;
+            &-images{
+                img{
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    &-menu{
+        margin-left: 2rem;
+        &-list{
+            list-style: none;
+            &__li{
+                margin-bottom: 0.5rem;
+                padding: 0.5rem;
+                &:hover{
+                    background-color:$color-btn;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    &-resume{
+        background-color: $color-btn;
+        border-radius: 1rem;
+        
+        a{
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            color:white;
+        }
+    }
+
+}
+
