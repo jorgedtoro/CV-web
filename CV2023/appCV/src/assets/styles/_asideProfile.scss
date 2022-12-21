@@ -1,0 +1,71 @@
+@import './commons/commons_dir';
+
+.aside{
+    background-color: $aside-background-color ;
+    border-radius: 0 1rem 1rem 0;
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    &-head{
+        display: flex;
+        gap:1rem;
+        padding: 0.5rem;
+        justify-content: space-around;
+        background-color: $contact-color;
+        border-radius: 0 1rem 0 0;
+        margin-bottom: 1rem;
+    }
+    &-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title {
+                font-size: 1rem;
+                align-self: start;
+        }
+        &-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-btn;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 60%;
+            margin-bottom: 1rem ;
+            a{
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin-right: 0.75rem;
+                }
+            }
+        } 
+    }
+    &-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-size: 1rem;
+            align-self: start;
+        }
+        &-card{
+            background-color: $color-btn;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 60%;
+            margin-bottom: 1rem ;
+
+        }
+    }
+}

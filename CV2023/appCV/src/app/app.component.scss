@@ -1,0 +1,11 @@
+@import '../assets/styles/commons/commons_dir';
+
+
+.container{
+    padding: 2rem;
+    height: 100vh;
+    //background-color: linear-gradient(180deg, rgba(169, 0, 252, 1) 0%, rgba(121, 9, 116, 1) 38%, rgba(203, 160, 201, 1) 88%, rgba(255, 255, 255, 1) 100%);;
+    // background-color: linear-gradient(180deg, #7758D1 ,#F7CBFD );
+   background-color: $aside-background-color;
+}
+
