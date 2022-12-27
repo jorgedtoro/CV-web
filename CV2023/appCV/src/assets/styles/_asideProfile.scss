@@ -1,27 +1,43 @@
 @import './commons/commons_dir';
 
 .aside{
-    background-color: $aside-background-color ;
+    background-color: $aside-profile-background-color;
     border-radius: 0 1rem 1rem 0;
     height: 90vh;
     color: white;
     display: flex;
     flex-direction: column;
     
+    
     &-head{
         display: flex;
         gap:1rem;
         padding: 0.5rem;
         justify-content: space-around;
+        // background: rgba(255, 255, 255, 0.001);
+        box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
         background-color: $contact-color;
         border-radius: 0 1rem 0 0;
         margin-bottom: 1rem;
     }
     &-profile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1rem;
+        width: 150px;
+        height: 150px;
+        border:1px solid;
+        border-radius: 50%;
+        margin-bottom: 3.5rem;
+        align-self: center;
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        img{
+            margin-bottom: 1rem;
+            border-radius: 50%;
+            max-width: 100%;
+        }
     }
     &-cards{
         display: flex;
@@ -30,23 +46,27 @@
         &-title {
                 font-size: 1rem;
                 align-self: start;
+                padding: 1rem;
+                margin-left:1rem;
         }
         &-card{
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $color-btn;
-            padding: 1rem;
+            padding: 0.75rem;
             border-radius: 5px;
             width: 60%;
             margin-bottom: 1rem ;
-            a{
-                align-items: center;
-                justify-content: center;
-                img{
-                    margin-right: 0.75rem;
+            &-content{
+                 display: flex;
+                 align-items: center;
+                
+                a{
+                    margin-left: 1.5rem;
                 }
             }
+           
         } 
     }
     &-social{
@@ -55,17 +75,24 @@
         align-items: center;
         &-title{
             font-size: 1rem;
-            align-self: start;
+                align-self: start;
+                padding: 1rem;
+                margin-left: 1rem;
         }
         &-card{
             background-color: $color-btn;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
+            padding: 0.75rem;
             border-radius: 5px;
             width: 60%;
             margin-bottom: 1rem ;
-
+            &-content{
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                a{
+                    margin-left: 1.5rem;
+                }
+            }
         }
     }
 }

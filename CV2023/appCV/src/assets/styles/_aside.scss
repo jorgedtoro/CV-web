@@ -7,7 +7,7 @@
     color: white;
     height: 90vh;
     &-head{
-        padding: 1rem;
+        
         margin-bottom: 4rem;
         &-content{
             gap:3rem;
@@ -20,12 +20,18 @@
         }
     }
     &-menu{
+        cursor: pointer;
         margin-left: 2rem;
         &-list{
             list-style: none;
             &__li{
                 margin-bottom: 0.5rem;
                 padding: 0.5rem;
+                display: flex;
+                align-items: center;
+                a{
+                    margin-left:1rem;
+                }
                 &:hover{
                     background-color:$color-btn;
                     border-radius: 5px;
@@ -36,8 +42,7 @@
     &-resume{
         background-color: $color-btn;
         border-radius: 1rem;
-        width: 50%;
-        justify-content: center;
+        margin-top: 22rem;
         padding: 0.75rem;
         
         a{
