@@ -14,19 +14,27 @@ app-aside-profile{
         background-color: #1D203E;
         color: white;
         padding: 1rem;
+        // max-width: 100%;
+        
         &-firstrow{
+           
             &-title{
                 font-size: 1.5rem;
                 text-transform: capitalize;
+                text-align: center;
+                margin-bottom: 2rem;
             }
         }
         &-secondrow{
             display: flex;
+            gap: 2rem;
             &-col-left{
+                flex-basis: 60%;
                 &__title{
-                    color:red;
+                    
                     text-align: center;
                     margin-bottom: 1rem;
+                    
                 }
                 .card{
                     display: flex;
@@ -35,13 +43,19 @@ app-aside-profile{
                     border:1px solid #657779;
                     padding: 1rem;
                     margin-left: 4.25rem;
-                    // width: 60%;
+                    align-items: center;
                     margin-bottom: 2rem;
                     &-title{
-                        color:red;
+                        font-size: 1.2rem;
                         align-items: center;
                         justify-content: center;
                         margin-bottom: 0.5rem;
+                    }
+                    &-image{
+                        height: 10%;
+                        img{
+                            max-width: 100%;
+                        }
                     }
                     &-content{
                         width: 80%;
@@ -50,7 +64,66 @@ app-aside-profile{
 
                 }
             }
+            &-col-right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-basis: 40%;
+                .actual-skills{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    .skills-title{
+                        margin-bottom: 1rem;
+                        text-align: center;
+                    }
+                    .skills-container{
+                        margin-bottom: 2.5rem;
+                        ul{
+                            display: grid;
+                            list-style: none;
+                            grid-template-columns: 20% 20% 20% 20%;
+                            gap:1rem;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100px;
+                            width: 100px;
+                            .skill{
+                                img{
+                                    max-width: 100%;
+                                }                        
+                            }
+                        }
+                    }
+
+                }
+                .future-skills{
+                    margin-top: 2.5rem;
+                    &-title{
+                        margin-bottom: 1rem;
+                        text-align: center;
+
+                    }
+                    &-list{
+                        list-style: none;
+                        display: grid;
+                        list-style: none;
+                        grid-template-columns: 50% 50%;
+                        gap: 1rem;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100px;
+                        width: 100px;
+                        
+                        .future-skill {
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-
 }
