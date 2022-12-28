@@ -21,22 +21,49 @@
         margin-bottom: 1rem;
     }
     &-profile{
-        width: 150px;
-        height: 150px;
-        border:1px solid;
-        border-radius: 50%;
         margin-bottom: 3.5rem;
         align-self: center;
         &-info{
             display: flex;
             flex-direction: column;
             align-items: center;
-            
-        }
-        img{
-            margin-bottom: 1rem;
-            border-radius: 50%;
-            max-width: 100%;
+            &-image{
+                border-radius: 50%;
+                border:1px solid;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 1rem;
+                img {
+                    border-radius: 50%;
+                    max-width: 100%;
+                }
+            }
+            &-content{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                position: relative;
+                &-user{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &-status{
+                    border-radius: 12px;
+                    border: 1px solid greenyellow;
+                    position: absolute;
+                    right: -80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(55.65deg, #344332 -64.47%, #61C554 164.47%);
+                    .user__status{
+                        padding: 0.5rem;
+                        color: greenyellow;
+                        font-size: 0.7rem;
+                    }
+                }
+            }           
         }
     }
     &-cards{

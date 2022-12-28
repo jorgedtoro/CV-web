@@ -9,36 +9,56 @@ app-aside-profile{
 .container{
     display: flex;
     font-family: $main-font;
+    height: 90vh;
+    overflow: hidden;
     .hero{
         flex-basis: 50%;
+        max-height: 90vh;
         background-color: #1D203E;
         color: white;
         padding: 1rem;
         // max-width: 100%;
         
         &-firstrow{
-           
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 0.75rem;
             &-title{
                 font-size: 1.5rem;
                 text-transform: capitalize;
-                text-align: center;
-                margin-bottom: 2rem;
+                // text-align: center;
+                margin-bottom: 1rem;
+            }
+            &-span{
+                font-size: 0.6rem;
+                border-radius: 12px;
+                color:greenyellow;
+                border:1px solid greenyellow;
+                padding: 0.4rem;
             }
         }
         &-secondrow{
             display: flex;
             gap: 2rem;
+            // max-height: 80vh;
             &-col-left{
+                display: flex;
+                flex-direction: column;
                 flex-basis: 60%;
+                max-height: 100%;
+                align-items: center;
                 &__title{
-                    
                     text-align: center;
                     margin-bottom: 1rem;
-                    
                 }
                 .card{
                     display: flex;
                     flex-direction: column;
+                    
+                    background-color: #1D203E;
+                    min-height: 20%;
+                    max-width: 70%;
                     border-radius: 1rem;
                     border:1px solid #657779;
                     padding: 1rem;
@@ -51,15 +71,11 @@ app-aside-profile{
                         justify-content: center;
                         margin-bottom: 0.5rem;
                     }
-                    &-image{
-                        height: 10%;
-                        img{
-                            max-width: 100%;
-                        }
-                    }
+                    
                     &-content{
                         width: 80%;
-                        text-align: justify;
+                        display: flex;
+                        
                     }
 
                 }
@@ -83,12 +99,11 @@ app-aside-profile{
                         ul{
                             display: grid;
                             list-style: none;
-                            grid-template-columns: 20% 20% 20% 20%;
+                            grid-template-columns: repeat(4, minmax(0, 1fr));;
                             gap:1rem;
                             justify-content: center;
                             align-items: center;
-                            height: 100px;
-                            width: 100px;
+                            
                             .skill{
                                 img{
                                     max-width: 100%;
