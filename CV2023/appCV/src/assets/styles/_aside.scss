@@ -1,66 +1,147 @@
 @import '../styles/commons/commons_dir';
 
+
+//mobile
 .aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
     background-color: $aside-background-color;
     border-radius: 1rem 0 0 1rem;
     color: white;
     height: 90vh;
+    position: relative;
+    
     &-head{
         
-        margin-bottom: 4rem;
         &-content{
-            gap:3rem;
-            display: flex;
-            &-images{
-                img{
-                    margin-right: 0.5rem;
-                }
-            }
+            display: none;
+        }
+        &-content-mobile{
+            display: block;
+            padding: 1rem;
         }
     }
     &-menu{
-        cursor: pointer;
-        margin-left: 2rem;
-        &-list{
-            list-style: none;
-            &__li{
+        display: none;
+    }
+    &-resume{
+        display: none;
+    }
+    
+}
+.mobile-menu {
+    position: fixed;
+    width: 40%;
+    height: 84.7vh;
+    background-color: rgba(44, 47, 72, 0.7);
+    display: flex;
+    border-radius: 0 1rem 1rem 1rem;
+    // transition: all 1s ease-out;
+    
+    .aside-menu-list{
+        list-style: none;
+        padding: 1rem;
+        &__li {
                 margin-bottom: 0.5rem;
                 padding: 0.5rem;
                 display: flex;
                 align-items: center;
-                a{
-                    margin-left:1rem;
+        
+                a {
+                    margin-left: 1rem;
                 }
-                &:hover{
-                    background-color:$color-btn;
+        
+                &:hover {
+                    background-color: $color-btn;
                     border-radius: 5px;
                 }
-            }
         }
-    }
-    &-resume{
-        background-color: $color-btn;
-        border-radius: 1rem;
-        margin-top: 22rem;
-        padding: 0.75rem;
-        
-        a{
+}
+}
+//tablet
+
+
+
+//desktop
+
+@media(min-width:$mq-desktop){
+
+    .aside {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            // padding: 1rem;
-            text-align: center;
-            text-decoration: none;
-            color:white;
-            img{
-                margin-right: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: $aside-background-color;
+            border-radius: 1rem 0 0 1rem;
+            color: white;
+            height: 90vh;
+    
+            &-head {
+    
+                margin-bottom: 4rem;
+    
+                &-content {
+                    gap: 3rem;
+                    display: flex;
+    
+                    &-images {
+                        img {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+                &-content-mobile{
+                    display: none;
+                }
             }
+    
+            &-menu {
+                display: flex;
+                cursor: pointer;
+                margin-left: 2rem;
+    
+                &-list {
+                    list-style: none;
+    
+                    &__li {
+                        margin-bottom: 0.5rem;
+                        padding: 0.5rem;
+                        display: flex;
+                        align-items: center;
+    
+                        a {
+                            margin-left: 1rem;
+                        }
+    
+                        &:hover {
+                            background-color: $color-btn;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+    
+            &-resume {
+                display: block;
+                background-color: $color-btn;
+                border-radius: 1rem;
+                margin-top: 22rem;
+                padding: 0.75rem;
+    
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // padding: 1rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+    
+                    img {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+    
         }
-    }
+
 
 }
-
