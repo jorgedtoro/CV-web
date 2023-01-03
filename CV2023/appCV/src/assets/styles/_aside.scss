@@ -1,6 +1,9 @@
 @import '../styles/commons/commons_dir';
 
 .aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
     background-color: $aside-background-color;
     border-radius: 1rem 0 0 1rem;

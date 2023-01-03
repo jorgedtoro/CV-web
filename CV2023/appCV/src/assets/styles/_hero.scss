@@ -16,19 +16,84 @@ app-aside-profile{
         max-height: 90vh;
         background-color: #1D203E;
         color: white;
-        padding: 1rem;
-        // max-width: 100%;
+        padding: 0.75rem 1rem 1rem 1rem;
+        
         
         &-firstrow{
            display: flex;
-           justify-content: center;
+           justify-content: space-around;
            align-items: center;
-           gap: 0.75rem;
+           gap: 1.5rem;
+           padding: 0.1rem;
+           margin-bottom: 1rem;
+        //    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+           
+           &-panel-icons{
+            margin-right:1rem;
+            margin-bottom: 0.2rem;
+            display: flex;
+            gap: 2rem;
+            .user-panel{
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 0.75rem;
+                padding: 0.5rem;
+
+                i{  
+                    margin-right: 1rem;          
+                    color:$white;
+                }
+            }
+                .user-notifications{
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 0.75rem;
+                    padding: 0.5rem;
+                    i{
+                        margin-right: 1rem;
+                        color: $white;
+                    }
+                    .fa-bookmark{
+                        position: relative;
+                    }
+                    .fa-bell{
+                        position: relative;
+                    }
+                    .fa-bookmark::after{
+                        content:'2';
+                        align-items: center;
+                        position: absolute;
+                        padding: 0.3rem;
+                        font-size: 0.45rem;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        border-radius: 50%;
+                        background-color: rgb(172, 14, 14);
+                        height: 5px;
+                        width: 5px;
+                        left: 8.5px;
+                        bottom: 6.5px;
+                    }
+                    .fa-bell::after{
+                        content: '3';
+                        align-items: center;
+                        position: absolute;
+                        padding: 0.3rem;
+                        font-size: 0.45rem;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        border-radius: 50%;
+                        background-color: rgb(170, 16, 119);
+                        height: 5px;
+                        width: 5px;
+                        left: 9.5px;
+                        bottom: 6.5px;
+                    }
+                }
+            }
+           
             &-title{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                font-weight: 400;
                 text-transform: capitalize;
+                padding: 0 0 0.45rem 0;
                 // text-align: center;
-                margin-bottom: 1rem;
             }
             &-span{
                 font-size: 0.6rem;
@@ -41,42 +106,53 @@ app-aside-profile{
         &-secondrow{
             display: flex;
             gap: 2rem;
-            // max-height: 80vh;
+            
             &-col-left{
                 display: flex;
                 flex-direction: column;
                 flex-basis: 60%;
                 max-height: 100%;
                 align-items: center;
+                // justify-content: center;
                 &__title{
                     text-align: center;
+                    font-size: 1.2rem;
+                    font-weight: 400;
                     margin-bottom: 1rem;
                 }
                 .card{
                     display: flex;
-                    flex-direction: column;
-                    
-                    background-color: #1D203E;
+                    background-color: rgba(255, 255, 255, 0.1);
                     min-height: 20%;
-                    max-width: 70%;
+                    min-width: 70%;
                     border-radius: 1rem;
-                    border:1px solid #657779;
+                    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
                     padding: 1rem;
-                    margin-left: 4.25rem;
                     align-items: center;
+                    
                     margin-bottom: 2rem;
-                    &-title{
-                        font-size: 1.2rem;
-                        align-items: center;
-                        justify-content: center;
-                        margin-bottom: 0.5rem;
-                    }
                     
                     &-content{
-                        width: 80%;
-                        display: flex;
+                        width: 150px;
+                        height: 100px;
+                        img{
+                            max-height: 100%;
+                            max-width: 100%;
+                            border-radius: 1rem;
+                        }                     
                         
                     }
+                    &-info{
+                        &-title{
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 0.5rem;
+                        }
+
+                    }
+                    
 
                 }
             }
@@ -92,6 +168,8 @@ app-aside-profile{
                     margin-bottom: 2rem;
                     .skills-title{
                         margin-bottom: 1rem;
+                        font-size: 1.2rem;
+                        font-weight: 400;
                         text-align: center;
                     }
                     .skills-container{
@@ -106,7 +184,7 @@ app-aside-profile{
                             
                             .skill{
                                 img{
-                                    max-width: 100%;
+                                    max-width: 70%;
                                 }                        
                             }
                         }
@@ -115,8 +193,13 @@ app-aside-profile{
                 }
                 .future-skills{
                     margin-top: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     &-title{
                         margin-bottom: 1rem;
+                        font-weight: 400;
+                        font-size: 1.2rem;
                         text-align: center;
 
                     }
@@ -133,7 +216,7 @@ app-aside-profile{
                         
                         .future-skill {
                             img {
-                                max-width: 100%;
+                                max-width: 80%;
                             }
                         }
                     }

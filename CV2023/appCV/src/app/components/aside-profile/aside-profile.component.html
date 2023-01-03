@@ -1,8 +1,16 @@
 <aside class="aside">
   <div class="aside-head">
-    <img src="assets/images/github.svg" alt="github" />
-    <img src="assets/images/Linkedin.svg" alt="Linkedin" />
-    <img src="assets/images/mail.svg" alt="mail" />
+    <a href="https://github.com/jorgedtoro" target="_blank">
+      <img src="assets/images/github.svg" alt="github" />
+    </a>
+
+    <a href="https://es.linkedin.com/in/jorge-de-toro-695b90bb" target="_blank">
+      <img src="assets/images/Linkedin.svg" alt="Linkedin" />
+    </a>
+
+    <a [routerLink]="['/contact']"
+      ><img src="assets/images/mail.svg" alt="mail" />
+    </a>
   </div>
   <div class="aside-profile">
     <div class="aside-profile-info">

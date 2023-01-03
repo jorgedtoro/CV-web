@@ -1,0 +1,42 @@
+@import './commons/commons_dir';
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font;
+    &-body{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 3rem;
+        .label{
+            color: $white;
+            margin-bottom: 1rem;
+        }
+        .input{
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+            padding: 0.7rem;
+            background-color: rgba(247,203,253, 0.5);
+            border: none;
+        }
+        textarea{
+            color:$white;
+            border: none;
+            border-radius: 0.3rem;
+            background-color: rgba(247,203,253, 0.5);
+
+        }
+    }
+    &-btn{
+        margin-left: 3rem;
+        margin-top: 1rem;
+        &__button{
+            padding: 1rem;
+            background-color: rgba(247,203,253, 0.5);
+            border-radius: 8px;
+            color:$white;
+        }
+    }
+}
