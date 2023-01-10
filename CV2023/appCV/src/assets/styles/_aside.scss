@@ -30,8 +30,8 @@
 .mobile-menu {
     position: fixed;
     width: 40%;
-    height: 84.7vh;
-    background-color: rgba(44, 47, 72, 0.7);
+    height: 84.4vh;
+    background-color: rgba(44, 47, 72, 1);
     display: flex;
     border-radius: 0 1rem 1rem 1rem;
     // transition: all 1s ease-out;
@@ -40,19 +40,19 @@
         list-style: none;
         padding: 1rem;
         &__li {
-                margin-bottom: 0.5rem;
-                padding: 0.5rem;
-                display: flex;
-                align-items: center;
-        
-                a {
-                    margin-left: 1rem;
-                }
-        
-                &:hover {
-                    background-color: $color-btn;
-                    border-radius: 5px;
-                }
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                background-color: $color-btn;
+                border-radius: 5px;
+            }
         }
 }
 }

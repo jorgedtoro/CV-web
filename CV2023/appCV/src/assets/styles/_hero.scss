@@ -1,64 +1,76 @@
 
-app-aside{
+
+//mobile
+
+  app-aside {
     flex-basis: 20%;
-    
-}
-app-aside-profile{
-    flex-basis: 30%;
-}
-.container{
+     
+  }
+
+  app-aside-profile {
+    flex-basis: 20%;
+  }
+
+  .container{
     display: flex;
-    font-family: $main-font;
-    height: 90vh;
-    overflow: hidden;
+    
     .hero{
-        flex-basis: 50%;
-        max-height: 90vh;
+        flex-basis: 60%;
+        height: 90vh;
+        overflow-y: scroll;
         background-color: #1D203E;
         color: white;
         padding: 0.75rem 1rem 1rem 1rem;
-        
-        
-        &-firstrow{
-           display: flex;
-           justify-content: space-around;
-           align-items: center;
-           gap: 1.5rem;
-           padding: 0.1rem;
-           margin-bottom: 1rem;
-        //    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
-           
-           &-panel-icons{
-            margin-right:1rem;
-            margin-bottom: 0.2rem;
+        scroll-behavior: smooth;
+        font-family: $main-font;
+        &-firstrow {
             display: flex;
-            gap: 2rem;
-            .user-panel{
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                border-radius: 0.75rem;
-                padding: 0.5rem;
-
-                i{  
-                    margin-right: 1rem;          
-                    color:$white;
-                }
-            }
-                .user-notifications{
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.1rem;
+            margin-bottom: 1rem;
+                    
+            &-panel-icons {
+                margin-right: 0.5rem;
+                margin-bottom: 0.2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+    
+                .user-panel {
                     border: 1px solid rgba(255, 255, 255, 0.1);
                     border-radius: 0.75rem;
                     padding: 0.5rem;
-                    i{
+    
+                    i {
+                        margin-right: 1rem;
+                        color: $white;
+                       
+                    }
+                }
+    
+                .user-notifications {
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 0.75rem;
+                    padding: 0.5rem;
+    
+                    i {
                         margin-right: 1rem;
                         color: $white;
                     }
-                    .fa-bookmark{
+    
+                    .fa-bookmark {
                         position: relative;
                     }
-                    .fa-bell{
+    
+                    .fa-bell {
                         position: relative;
                     }
-                    .fa-bookmark::after{
-                        content:'2';
+    
+                    .fa-bookmark::after {
+                        content: '2';
                         align-items: center;
                         position: absolute;
                         padding: 0.3rem;
@@ -71,7 +83,8 @@ app-aside-profile{
                         left: 8.5px;
                         bottom: 6.5px;
                     }
-                    .fa-bell::after{
+    
+                    .fa-bell::after {
                         content: '3';
                         align-items: center;
                         position: absolute;
@@ -87,123 +100,92 @@ app-aside-profile{
                     }
                 }
             }
-           
             &-title{
-                font-size: 1.2rem;
-                font-weight: 400;
+                font-size: 0.75rem;
                 text-transform: capitalize;
-                padding: 0 0 0.45rem 0;
-                // text-align: center;
-            }
-            &-span{
-                font-size: 0.6rem;
-                border-radius: 12px;
-                color:greenyellow;
-                border:1px solid greenyellow;
-                padding: 0.4rem;
             }
         }
         &-secondrow{
             display: flex;
-            gap: 2rem;
-            
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        
             &-col-left{
                 display: flex;
                 flex-direction: column;
-                flex-basis: 60%;
-                max-height: 100%;
                 align-items: center;
-                // justify-content: center;
                 &__title{
-                    text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: 400;
                     margin-bottom: 1rem;
                 }
                 .card{
                     display: flex;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    min-height: 20%;
-                    min-width: 70%;
-                    border-radius: 1rem;
-                    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
-                    padding: 1rem;
+                    flex-direction: column;
+                    gap:0.5rem;
                     align-items: center;
-                    
-                    margin-bottom: 2rem;
-                    
+                    border-radius: 1rem;
+                    padding: 0.5rem;
+
                     &-content{
-                        width: 150px;
+                        width: 100px;
                         height: 100px;
                         img{
-                            max-height: 100%;
                             max-width: 100%;
+                            max-height: 100%;
                             border-radius: 1rem;
-                        }                     
-                        
+                        }
                     }
                     &-info{
-                        &-title{
-                            font-size: 1.2rem;
-                            font-weight: 300;
-                            align-items: center;
-                            justify-content: center;
-                            margin-bottom: 0.5rem;
-                        }
-
+                        font-size: 0.7rem;
                     }
-                    
-
                 }
             }
             &-col-right{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                flex-basis: 40%;
-                .actual-skills{
+                .actual-skills {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-bottom: 2rem;
+                    gap:1rem;
                     .skills-title{
-                        margin-bottom: 1rem;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-weight: 400;
-                        text-align: center;
                     }
-                    .skills-container{
+                    .skills-container {
                         margin-bottom: 2.5rem;
-                        ul{
+
+                        ul {
                             display: grid;
                             list-style: none;
-                            grid-template-columns: repeat(4, minmax(0, 1fr));;
-                            gap:1rem;
+                            grid-template-columns: repeat(3, minmax(0, 1fr));
+                            gap: 1rem;
                             justify-content: center;
                             align-items: center;
-                            
-                            .skill{
-                                img{
+                            .skill {
+                                img {
                                     max-width: 70%;
-                                }                        
+                                }
                             }
-                        }
+                        }   
                     }
-
                 }
                 .future-skills{
-                    margin-top: 2.5rem;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
-                    &-title{
-                        margin-bottom: 1rem;
-                        font-weight: 400;
-                        font-size: 1.2rem;
-                        text-align: center;
 
+                    &-title {
+                            margin-bottom: 1rem;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            text-align: center;
+                    
                     }
-                    &-list{
+                    
+                    &-list {
                         list-style: none;
                         display: grid;
                         list-style: none;
@@ -213,15 +195,281 @@ app-aside-profile{
                         align-items: center;
                         height: 100px;
                         width: 100px;
-                        
+                
                         .future-skill {
                             img {
                                 max-width: 80%;
                             }
                         }
                     }
+
+
+
+                }
+            }
+        
+        }
+    }
+  }
+
+
+//tablet
+
+
+//desktop
+@media(min-width:$mq-desktop) {
+
+      
+        .container {
+            display: flex;
+            font-family: $main-font;
+            height: 90vh;
+            overflow: hidden;
+    
+            .hero {
+                flex-basis: 50%;
+                max-height: 90vh;
+                background-color: #1D203E;
+                color: white;
+                padding: 0.75rem 1rem 1rem 1rem;
+    
+    
+                &-firstrow {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 0.1rem;
+                    margin-bottom: 1rem;
+                    //    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+    
+                    &-panel-icons {
+                        margin-right: 1rem;
+                        margin-bottom: 0.2rem;
+                        display: flex;
+                        gap: 2rem;
+    
+                        .user-panel {
+                            border: 1px solid rgba(255, 255, 255, 0.1);
+                            border-radius: 0.75rem;
+                            padding: 0.5rem;
+    
+                            i {
+                                margin-right: 1rem;
+                                color: $white;
+                            }
+                        }
+    
+                        .user-notifications {
+                            border: 1px solid rgba(255, 255, 255, 0.1);
+                            border-radius: 0.75rem;
+                            padding: 0.5rem;
+    
+                            i {
+                                margin-right: 1rem;
+                                color: $white;
+                            }
+    
+                            .fa-bookmark {
+                                position: relative;
+                            }
+    
+                            .fa-bell {
+                                position: relative;
+                            }
+    
+                            .fa-bookmark::after {
+                                content: '2';
+                                align-items: center;
+                                position: absolute;
+                                padding: 0.3rem;
+                                font-size: 0.45rem;
+                                border: 1px solid rgba(255, 255, 255, 0.1);
+                                border-radius: 50%;
+                                background-color: rgb(172, 14, 14);
+                                height: 5px;
+                                width: 5px;
+                                left: 8.5px;
+                                bottom: 6.5px;
+                            }
+    
+                            .fa-bell::after {
+                                content: '3';
+                                align-items: center;
+                                position: absolute;
+                                padding: 0.3rem;
+                                font-size: 0.45rem;
+                                border: 1px solid rgba(255, 255, 255, 0.1);
+                                border-radius: 50%;
+                                background-color: rgb(170, 16, 119);
+                                height: 5px;
+                                width: 5px;
+                                left: 9.5px;
+                                bottom: 6.5px;
+                            }
+                        }
+                    }
+    
+                    &-title {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        padding: 0 0 0.45rem 0;
+                        // text-align: center;
+                    }
+    
+                    &-span {
+                        font-size: 0.6rem;
+                        border-radius: 12px;
+                        color: greenyellow;
+                        border: 1px solid greenyellow;
+                        padding: 0.4rem;
+                    }
+                }
+    
+                &-secondrow {
+                    display: flex;
+                    gap: 2rem;
+    
+                    &-col-left {
+                        display: flex;
+                        flex-direction: column;
+                        flex-basis: 60%;
+                        max-height: 100%;
+                        align-items: center;
+    
+                        // justify-content: center;
+                        &__title {
+                            text-align: center;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            margin-bottom: 1rem;
+                        }
+    
+                        .card {
+                            display: flex;
+                            background-color: rgba(255, 255, 255, 0.1);
+                            min-height: 20%;
+                            min-width: 70%;
+                            border-radius: 1rem;
+                            box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
+                            padding: 1rem;
+                            align-items: center;
+                            margin-bottom: 2rem;
+    
+                            &-content {
+                                width: 150px;
+                                height: 100px;
+    
+                                img {
+                                    max-height: 100%;
+                                    max-width: 100%;
+                                    border-radius: 1rem;
+                                }
+    
+                            }
+    
+                            &-info {
+                                &-title {
+                                    font-size: 1.2rem;
+                                    font-weight: 300;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom: 0.5rem;
+                                }
+    
+                            }
+    
+    
+                        }
+                    }
+    
+                    &-col-right {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        flex-basis: 40%;
+    
+                        .actual-skills {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-bottom: 2rem;
+    
+                            .skills-title {
+                                margin-bottom: 1rem;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+    
+                            .skills-container {
+                                margin-bottom: 2.5rem;
+    
+                                ul {
+                                    display: grid;
+                                    list-style: none;
+                                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                                    ;
+                                    gap: 1rem;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    .skill {
+                                        img {
+                                            max-width: 70%;
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+    
+                        .future-skills {
+                            margin-top: 2.5rem;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+    
+                            &-title {
+                                margin-bottom: 1rem;
+                                font-weight: 400;
+                                font-size: 1.2rem;
+                                text-align: center;
+    
+                            }
+    
+                            &-list {
+                                list-style: none;
+                                display: grid;
+                                list-style: none;
+                                grid-template-columns: 50% 50%;
+                                gap: 1rem;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100px;
+                                width: 100px;
+    
+                                .future-skill {
+                                    img {
+                                        max-width: 80%;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
-    }
+
+
 }
+
+
+
+
+
+
+
+
+

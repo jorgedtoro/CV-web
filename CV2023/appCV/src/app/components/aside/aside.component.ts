@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aside.component.scss'],
 })
 export class AsideComponent implements OnInit {
-  mobileDisplay: boolean = true;
+  mobileDisplay: boolean = false;
 
   constructor() {}
 
@@ -14,6 +14,6 @@ export class AsideComponent implements OnInit {
 
   show() {
     this.mobileDisplay = !this.mobileDisplay;
-    console.log(this.mobileDisplay);
+    // console.log(this.mobileDisplay);
   }
 }

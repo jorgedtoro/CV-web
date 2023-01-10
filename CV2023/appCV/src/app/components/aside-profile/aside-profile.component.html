@@ -1,17 +1,24 @@
 <aside class="aside">
   <div class="aside-head">
-    <a href="https://github.com/jorgedtoro" target="_blank">
-      <img src="assets/images/github.svg" alt="github" />
-    </a>
-
-    <a href="https://es.linkedin.com/in/jorge-de-toro-695b90bb" target="_blank">
-      <img src="assets/images/Linkedin.svg" alt="Linkedin" />
-    </a>
-
-    <a [routerLink]="['/contact']"
-      ><img src="assets/images/mail.svg" alt="mail" />
-    </a>
+    <div class="aside-head-content-mobile">
+      <a (click)="show()"><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <div class="aside-head-content">
+      <a href="https://github.com/jorgedtoro" target="_blank">
+        <img src="assets/images/github.svg" alt="github" />
+      </a>
+      <a
+        href="https://es.linkedin.com/in/jorge-de-toro-695b90bb"
+        target="_blank"
+      >
+        <img src="assets/images/Linkedin.svg" alt="Linkedin" />
+      </a>
+      <a [routerLink]="['/contact']"
+        ><img src="assets/images/mail.svg" alt="mail" />
+      </a>
+    </div>
   </div>
+
   <div class="aside-profile">
     <div class="aside-profile-info">
       <div class="aside-profile-info-image">
@@ -64,6 +71,63 @@
         <img src="assets/images/asideProfile/Twitter.svg" alt="icon" />
         <a>@jorgedtoro</a>
       </div>
+    </div>
+  </div>
+
+  <div class="aside-content-mobile-menu" *ngIf="mobileDisplay">
+    <div class="aside-content-mobile-menu-info">
+      <img src="assets/images/gamer.jpg" alt="avatar" />
+      <div class="aside-content-mobile-menu-info-text">
+        <h2 class="user__name">Jorge de Toro</h2>
+        <span class="user__nick">@developer</span>
+      </div>
+      <div class="aside-content-mobile-menu-info-status">
+        <span class="user__status">ONLINE</span>
+      </div>
+    </div>
+    <div class="aside-content-mobile-menu-cards">
+      <h2 class="aside-content-mobile-menu-cards-title">New Followers</h2>
+      <div class="aside-content-mobile-menu-cards-card">
+        <div class="card-content">
+          <img src="assets/images/asideProfile/FSD.svg" alt="icon" />
+          <a>Master Full Stack Developer</a>
+        </div>
+      </div>
+      <div class="aside-content-mobile-menu-cards-card">
+        <div class="card-content">
+          <img src="assets/images/asideProfile/Data.svg" alt="icon" />
+          <a>Master Data Science</a>
+        </div>
+      </div>
+
+      <div class="aside-content-mobile-menu-cards-card">
+        <div class="card-content">
+          <img src="assets/images/asideProfile/ADE.svg" alt="icon" />
+          <a>Licenciado en Admón. y Dirección de empresas</a>
+        </div>
+      </div>
+    </div>
+    <div class="aside-content-mobile-menu-social">
+      <ul class="social-list">
+        <a href="https://github.com/jorgedtoro" target="_blank">
+          <img src="assets/images/github.svg" alt="github" />
+        </a>
+        <a
+          href="https://es.linkedin.com/in/jorge-de-toro-695b90bb"
+          target="_blank"
+        >
+          <img src="assets/images/Linkedin.svg" alt="Linkedin" />
+        </a>
+        <a [routerLink]="['/contact']"
+          ><img src="assets/images/mail.svg" alt="mail" />
+        </a>
+        <a href=""
+          ><img src="assets/images/asideProfile/Instagram.svg" alt="icon"
+        /></a>
+        <a href=""
+          ><img src="assets/images/asideProfile/Twitter.svg" alt="icon"
+        /></a>
+      </ul>
     </div>
   </div>
 </aside>
