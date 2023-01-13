@@ -1,1 +1,189 @@
-<p>experience works!</p>
+<div class="container">
+  <app-aside></app-aside>
+  <div class="main">
+    <article class="card">
+      <div class="card-head">
+        <h1 class="card-head-title">Full Stack Developer</h1>
+      </div>
+      <div class="card-info">
+        <div class="card-info-member">
+          <img
+            src="../../../assets/images/experience/Calendar.png"
+            alt="calendar logo"
+          />
+          <p>Member since: Oct - 2022</p>
+        </div>
+        <div class="card-info-company">
+          <img
+            src="../../../assets/images/experience/Business Building.png"
+            alt="company logo"
+          />
+          <p><span>Company: </span>Freelance</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="card-body-list">
+          <li class="card-body-list-item">Personal web Resume Jan 23</li>
+          <li class="card-body-list-item">
+            App Teacher: Inetum Oct 22 - Dic 22
+          </li>
+          <li class="card-body-list-item">API REST NodeJS and MYSQL</li>
+          <li class="card-body-list-item">API REST NodeJS and Mongo DB</li>
+          <li class="card-body-list-item">
+            App Angular with API REST connection
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer" id="1" (click)="showModal($event)">
+        <img
+          src="../../../assets/images/experience/Search.png"
+          alt="search logo"
+        />
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <h1 class="card-head-title">Programmer</h1>
+      </div>
+      <div class="card-info">
+        <div class="card-info-member">
+          <img
+            src="../../../assets/images/experience/Calendar.png"
+            alt="calendar logo"
+          />
+          <p>Member since: Oct - 2022</p>
+        </div>
+        <div class="card-info-company">
+          <img
+            src="../../../assets/images/experience/Business Building.png"
+            alt="company logo"
+          />
+          <p><span>Company: </span>El Corte Inglés</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="card-body-list">
+          <li class="card-body-list-item">Escenario Promocional VBA</li>
+          <li class="card-body-list-item">Python Scripts</li>
+          <li class="card-body-list-item">VBA projects</li>
+          <li class="card-body-list-item">SAS Scripts</li>
+        </ul>
+      </div>
+      <div class="card-footer" id="2" (click)="showModal($event)">
+        <img
+          src="../../../assets/images/experience/Search.png"
+          alt="search logo"
+        />
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <h1 class="card-head-title">Pricing Manager</h1>
+      </div>
+      <div class="card-info">
+        <div class="card-info-member">
+          <img
+            src="../../../assets/images/experience/Calendar.png"
+            alt="calendar logo"
+          />
+          <p>Member since: 2016</p>
+        </div>
+        <div class="card-info-company">
+          <img
+            src="../../../assets/images/experience/Business Building.png"
+            alt="company logo"
+          />
+          <p><span>Company: </span>El Corte Inglés</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="card-body-list">
+          <li class="card-body-list-item">Team Leader</li>
+          <li class="card-body-list-item">Estudio de la competencia</li>
+          <li class="card-body-list-item">
+            Diseño y estandarización de los flujos de trabajo
+          </li>
+          <li class="card-body-list-item">API REST NodeJS and Mongo DB</li>
+          <li class="card-body-list-item">
+            App Angular with API REST connection
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer" id="3" (click)="showModal($event)">
+        <img
+          src="../../../assets/images/experience/Search.png"
+          alt="search logo"
+        />
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <h1 class="card-head-title">Senior Merchandiser</h1>
+      </div>
+      <div class="card-info">
+        <div class="card-info-member">
+          <img
+            src="../../../assets/images/experience/Calendar.png"
+            alt="calendar logo"
+          />
+          <p>Member since: Nov - 2014</p>
+        </div>
+        <div class="card-info-company">
+          <img
+            src="../../../assets/images/experience/Business Building.png"
+            alt="company logo"
+          />
+          <p><span>Company: </span>El Corte Inglés</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="card-body-list">
+          <li class="card-body-list-item">Team Leader</li>
+          <li class="card-body-list-item">Estudio KPIs</li>
+          <li class="card-body-list-item">
+            Diseño y estandarización de los flujos de trabajo
+          </li>
+          <li class="card-body-list-item">API REST NodeJS and Mongo DB</li>
+          <li class="card-body-list-item">
+            App Angular with API REST connection
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer" id="4" (click)="showModal($event)">
+        <img
+          src="../../../assets/images/experience/Search.png"
+          alt="search logo"
+        />
+      </div>
+    </article>
+  </div>
+  <div
+    class="model model-fullstack modal"
+    id="modal"
+    [ngClass]="{ show: activo }"
+  >
+    <div class="modal-body">
+      <a class="modal-body-close" (click)="closeModal()"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <h2 class="modal-body-title">{{ experience.title }}</h2>
+      <div>
+        <div class="modal-body-subtitle">
+          <i class="fa-solid fa-address-card"></i>
+          <p class="modal-body-subtitle-text">About</p>
+        </div>
+        <p class="modal-body-text">
+          {{ experience.textOne }}
+        </p>
+        <div class="modal-body-tasks">
+          <i class="fa-solid fa-list-check"></i>
+          <p class="modal-body-tasks-task">Tareas / Proyectos:</p>
+        </div>
+        <p class="modal-body-text">{{ experience.textTwo }}</p>
+        <p class="modal-body-text">{{ experience.textThree }}</p>
+        <p class="modal-body-text">{{ experience.textFour }}</p>
+        <p class="modal-body-text">{{ experience.textFive }}</p>
+      </div>
+    </div>
+  </div>
+</div>
