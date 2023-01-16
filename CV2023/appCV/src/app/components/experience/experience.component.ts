@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { experience } from 'src/app/utils/dbExperience..db';
-import { Experience } from 'src/app/interfaces/experience.interface';
 import { ExperienceService } from 'src/app/services/experience.service';
 
 @Component({
@@ -22,10 +20,10 @@ export class ExperienceComponent implements OnInit {
 
   showModal(event: any) {
     const id = parseInt(event.path[1].id);
-    console.log(id);
+    // console.log(id);
     this.activo = !this.activo;
     this.experience = this.experienceService.getExperienceById(id);
-    console.log(this.experience);
+    // console.log(this.experience);
   }
   closeModal() {
     this.activo = !this.activo;

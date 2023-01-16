@@ -2,22 +2,23 @@
 
 //mobile
 
-  app-aside {
-    flex-basis: 20%;
-     
-  }
-
-  app-aside-profile {
-    flex-basis: 20%;
-  }
+  
 
   .container{
     display: flex;
+    app-aside {
+            flex-basis: 10%;
+    
+    }
+    
+    app-aside-profile {
+            flex-basis: 10%;
+    }
     .hero::-webkit-scrollbar {
         display: none;
     }
     .hero{
-        flex-basis: 60%;
+        flex-basis: 80%;
         height: 90vh;
         overflow-y: scroll;
         background-color: #1D203E;
@@ -228,6 +229,14 @@
             font-family: $main-font;
             height: 90vh;
             overflow: hidden;
+            app-aside {
+                    flex-basis: 20%;
+            
+                }
+            
+                app-aside-profile {
+                    flex-basis: 20%;
+                }
     
             .hero {
                 flex-basis: 60%;

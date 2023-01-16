@@ -1,0 +1,99 @@
+@import './commons/commons_dir';
+
+.container{
+    display: flex;
+    app-aside{
+        flex-basis:10%
+    }
+
+    .main::-webkit-scrollbar {
+            display: none;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        gap: 3rem;
+        background-color: rgba(44, 47, 72, 1);
+        color: white;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        flex-basis: 90;
+
+        .card{
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            font-family: $main-font;
+            font-weight: 400;
+            padding: 1rem;
+            &-head{
+                &-title{
+                    font-size: 0.9rem;
+                    font-weight: 100;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+            }
+            &-img{
+                img{
+                    border-radius: 1rem;
+                    max-width: 100%;
+                }
+            }
+            &-tecno{
+                &-list{
+                    list-style: none;
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 0.5rem;
+                    padding: 0.5rem;
+                    
+                }
+            }
+            
+            &-info{
+                padding: 0.5rem;
+                text-align: justify;
+                font-size: 0.9rem;
+                font-weight: 100;
+            }
+            &-footer{
+                display: flex;
+                padding: 0.5rem;
+                justify-content: space-around;
+                a{
+                    cursor: pointer;
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+@media(min-width:$mq-desktop) {
+    
+    .container {
+        app-aside {
+                flex-basis: 20%
+            }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            padding: 2rem;
+            flex-basis: 80%;
+            .card::-webkit-scrollbar {
+                display: none;
+            }
+            .card{
+                flex-basis: 25%;
+
+            }
+        }
+    }
+}

@@ -4,6 +4,9 @@
 .container{
     position: relative;
     display: flex;
+    app-aside{
+        flex-basis:10%
+    }
     .main::-webkit-scrollbar {
             display: none;
         }
@@ -124,10 +127,14 @@
 //desktop
 @media(min-width:$mq-desktop) {
    .container{
+    app-aside{
+        flex-basis:20%;
+    }
      .main{
        display: flex;
        flex-direction: row;
        align-items: center;
+       flex-basis:80%;
        
        .card{
         flex-basis: 25%;
