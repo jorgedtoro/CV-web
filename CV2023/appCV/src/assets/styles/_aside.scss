@@ -8,7 +8,7 @@
     color: white;
     height: 90vh;
     position: relative;
-    
+    font-family: $main-font;
     &-head{
         
         &-content{
@@ -33,7 +33,9 @@
     height: 84.4vh;
     background-color: rgba(44, 47, 72, 1);
     display: flex;
+    flex-direction: column;
     border-radius: 0 1rem 1rem 1rem;
+    justify-content: space-between;
     // transition: all 1s ease-out;
     
     .aside-menu-list{
@@ -54,7 +56,26 @@
                 border-radius: 5px;
             }
         }
-}
+    }
+    .aside-resume-mobile{
+        background-color: $color-btn;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // padding: 1rem;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+        
+                img {
+                    margin-right: 1rem;
+                }
+            }
+    }
 }
 //tablet
 
@@ -67,7 +88,7 @@
     .aside {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            //justify-content: space-between;
             padding: 1rem;
             background-color: $aside-background-color;
             border-radius: 1rem 0 0 1rem;
@@ -95,11 +116,14 @@
     
             &-menu {
                 display: flex;
+                flex-direction: column;
+                
                 cursor: pointer;
                 margin-left: 2rem;
-    
                 &-list {
+                    width: 100%;
                     list-style: none;
+                    
     
                     &__li {
                         margin-bottom: 0.5rem;

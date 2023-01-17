@@ -16,10 +16,13 @@ export class ExperienceComponent implements OnInit {
     private experienceService: ExperienceService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.experience = this.experienceService.getAll();
+  }
 
   showModal(event: any) {
-    const id = parseInt(event.path[1].id);
+    console.log(event);
+    const id = parseInt(event.path[0].id);
     // console.log(id);
     this.activo = !this.activo;
     this.experience = this.experienceService.getExperienceById(id);

@@ -102,11 +102,15 @@
 //desktop
 @media(min-width:$mq-desktop) {
     .container {
+        app-aside{
+            flex-basis: 20%;
+        }
         .main {
             display: flex;
             flex-direction: row;
             // align-items: center;
             padding: 1rem;
+            flex-basis:80%;
             .card::-webkit-scrollbar {
                 display: none;
             }

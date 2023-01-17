@@ -26,6 +26,7 @@
             border-radius: 1rem;
             font-family: $main-font;
             font-weight: 400;
+            
             &-head{
                 padding: 1rem; 
                 border-radius: 1rem 1rem 0 0;
@@ -68,6 +69,10 @@
                 display: flex;
                 justify-content: center;
                 padding: 1rem;
+                img{
+
+                    cursor: pointer;
+                }
             }
         }
        
@@ -75,14 +80,20 @@
     .model{
         display: none;
     }
+    .modal-body::-webkit-scrollbar {
+        display: none;
+    }
     .modal-body{
-        background-color: $aside-profile-background-color;
-        padding: 1rem;
-        font-family: $main-font;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        height: 90vh;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: rgba($aside-profile-background-color,0.8);
+        font-family: $main-font;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
         &-close{
             align-self: end;
         }
@@ -115,12 +126,15 @@
 
     }
     .show{
-        display:block;
+        display:flex;
+        flex-direction: column;
         position: absolute;
         color:white;
         min-width: 100%;
         min-height: 100%;
         background-color: $aside-background-color;
+        border-radius: 1rem;
+        
     
     };
 }
@@ -133,12 +147,28 @@
      .main{
        display: flex;
        flex-direction: row;
-       align-items: center;
-       flex-basis:80%;
        
+       justify-content: flex-start;
+       flex-basis:80%;
+       .card::-webkit-scrollbar {
+            display: none;
+        }
        .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        max-height: 60vh;
         flex-basis: 25%;
-        min-height: 50%;
+        overflow-y: scroll;
+        &-body{
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            height: 100%
+            
+            
+        }
        }
        
     }

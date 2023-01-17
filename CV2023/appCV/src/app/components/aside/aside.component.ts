@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-aside',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsideComponent implements OnInit {
   mobileDisplay: boolean = false;
+  hero: boolean = false;
 
-  constructor() {}
+  constructor(private activateRoute: ActivatedRoute, private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.router.url === '/home') {
+      this.hero = true;
+    }
+  }
 
   show() {
     this.mobileDisplay = !this.mobileDisplay;
-    // console.log(this.mobileDisplay);
   }
 }

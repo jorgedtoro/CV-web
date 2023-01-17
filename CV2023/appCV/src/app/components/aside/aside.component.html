@@ -22,6 +22,11 @@
           <a> Experience</a>
         </li>
       </ul>
+      <div class="aside-resume-mobile" *ngIf="hero">
+        <a href="assets/Resume.pdf" class="btn" download="Resume.pdf"
+          ><img src="assets/images/Vector.svg" alt="" /> Resume</a
+        >
+      </div>
     </div>
     <div class="aside-head-content">
       <div class="aside-head-content-images">
@@ -51,10 +56,5 @@
         <a> Experience</a>
       </li>
     </ul>
-  </div>
-  <div class="aside-resume">
-    <a href="assets/Resume.pdf" class="btn" download="Resume.pdf"
-      ><img src="assets/images/Vector.svg" alt="" /> Resume</a
-    >
   </div>
 </aside>
