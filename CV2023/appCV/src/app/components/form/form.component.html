@@ -1,9 +1,12 @@
-<form class="form">
+<form class="form" [formGroup]="userForm" (ngSubmit)="getDataForm()">
   <div class="form-body">
     <label class="label" for="name">Name</label>
-    <input class="input" type="text" id="name" />
+    <input class="input" type="text" id="name" formControlName="name" />
     <label class="label" for="lastName">Last Name</label>
-    <input class="input" type="text" id="lastName" />
+    <input class="input" type="text" id="lastName" formControlName="lastName" />
+    <label class="label" for="mail">Email</label>
+    <input class="input" type="email" id="mail" formControlName="mail" />
+
     <label class="label" for="comments">Comments</label>
     <textarea
       name="comments"

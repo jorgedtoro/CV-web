@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { ListProjectsComponent } from './components/list-projects/list-projects.
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FormComponent } from './components/form/form.component';
+import { EmailService } from './services/email.service';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { FormComponent } from './components/form/form.component';
     ListProjectsComponent,
     EducationComponent,
     ExperienceComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [EmailService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

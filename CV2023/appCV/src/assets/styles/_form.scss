@@ -20,9 +20,12 @@
             padding: 0.7rem;
             background-color: rgba(247,203,253, 0.5);
             border: none;
+            color: $white;
+            font-family: $main-font;
         }
         textarea{
             color:$white;
+            font-family: $main-font;
             border: none;
             border-radius: 0.3rem;
             background-color: rgba(247,203,253, 0.5);
