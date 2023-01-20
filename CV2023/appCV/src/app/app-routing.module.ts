@@ -5,6 +5,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ListProjectsComponent } from './components/list-projects/list-projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ViewAppTeacherComponent } from './components/view-app-teacher/view-app-teacher.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'projects', component: ListProjectsComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
+  { path: 'appTeacher', component: ViewAppTeacherComponent },
 ];
 
 @NgModule({

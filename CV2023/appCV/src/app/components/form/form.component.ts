@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-form',
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class FormComponent implements OnInit {
   userForm: FormGroup;
 
-  constructor() {
+  constructor(private emailService: EmailService) {
     this.userForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       lastName: new FormControl('', [
@@ -17,13 +18,22 @@ export class FormComponent implements OnInit {
         Validators.minLength(3),
       ]),
       mail: new FormControl('', [Validators.required, Validators.email]),
+      comments: new FormControl('', [
+        Validators.required,
+        Validators.minLength(3),
+      ]),
     });
   }
 
   ngOnInit(): void {}
 
-  async getDataForm(): Promise<void> {
+  getDataForm(): any {
     let user = this.userForm.value;
     console.log(user);
+    // debugger;
+    // this.emailService.sendMessage(user).subscribe(() => {
+    //   console.log('Mensaje enviado');
+    // });
+    this.emailService.sendMessage(user);
   }
 }

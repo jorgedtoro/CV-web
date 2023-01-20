@@ -14,6 +14,7 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FormComponent } from './components/form/form.component';
 import { EmailService } from './services/email.service';
+import { ViewAppTeacherComponent } from './components/view-app-teacher/view-app-teacher.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EmailService } from './services/email.service';
     EducationComponent,
     ExperienceComponent,
     FormComponent,
+    ViewAppTeacherComponent,
   ],
   imports: [
     BrowserModule,

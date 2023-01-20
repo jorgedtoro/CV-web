@@ -1,0 +1,57 @@
+@import '../styles/commons/commons_dir';
+
+//mobile
+.container {
+    display: flex;
+
+    app-aside {
+        flex-basis: 10%;
+        
+    }
+    .main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 90%;
+        height: 90vh;
+        gap: 3rem;
+        background-color: rgba(44, 47, 72, 1);
+        color: white;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        font-family: $main-font;
+        &-panel-icons{
+            display: flex;
+            justify-content: center;
+            gap:2rem;
+            padding: 1rem;
+            font-size:0.9rem;
+            a{
+                color: white;
+                text-decoration: none;
+                i{
+                    margin-right: 0.5rem;
+                }
+            }
+        }   
+    }
+    
+    
+}
+
+//tablet
+@media(min-width:$mq-tablet){
+    app-aside {
+        flex-basis: 20%;
+    
+    }
+    .hero{
+        flex-basis:80%;
+    }
+    
+}

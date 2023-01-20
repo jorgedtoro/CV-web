@@ -219,34 +219,10 @@
 
 //tablet
 
-
-//desktop
-@media(min-width:$mq-desktop) {
-
-      
-        .container {
-            display: flex;
-            font-family: $main-font;
-            height: 90vh;
-            overflow: hidden;
-            app-aside {
-                    flex-basis: 20%;
-            
-                }
-            
-                app-aside-profile {
-                    flex-basis: 20%;
-                }
-    
-            .hero {
-                flex-basis: 60%;
-                max-height: 90vh;
-                background-color: #1D203E;
-                color: white;
-                padding: 0.75rem 1rem 1rem 1rem;
-    
-    
-                &-firstrow {
+@media(min-width:$mq-tablet){
+    .container{
+        .hero{
+            &-firstrow {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -255,43 +231,43 @@
                     padding: 0.1rem;
                     margin-bottom: 1rem;
                     //    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
-    
+            
                     &-panel-icons {
                         margin-right: 1rem;
                         margin-bottom: 0.2rem;
                         display: flex;
                         flex-direction: row;
                         gap: 2rem;
-    
+            
                         .user-panel {
                             border: 1px solid rgba(255, 255, 255, 0.1);
                             border-radius: 0.75rem;
                             padding: 0.5rem;
-    
+            
                             i {
                                 margin-right: 1rem;
                                 color: $white;
                             }
                         }
-    
+            
                         .user-notifications {
                             border: 1px solid rgba(255, 255, 255, 0.1);
                             border-radius: 0.75rem;
                             padding: 0.5rem;
-    
+            
                             i {
                                 margin-right: 1rem;
                                 color: $white;
                             }
-    
+            
                             .fa-bookmark {
                                 position: relative;
                             }
-    
+            
                             .fa-bell {
                                 position: relative;
                             }
-    
+            
                             .fa-bookmark::after {
                                 content: '2';
                                 align-items: center;
@@ -306,7 +282,7 @@
                                 left: 8.5px;
                                 bottom: 6.5px;
                             }
-    
+            
                             .fa-bell::after {
                                 content: '3';
                                 align-items: center;
@@ -323,7 +299,7 @@
                             }
                         }
                     }
-    
+            
                     &-title {
                         font-size: 1.2rem;
                         font-weight: 400;
@@ -331,7 +307,7 @@
                         padding: 0 0 0.45rem 0;
                         // text-align: center;
                     }
-    
+            
                     &-span {
                         font-size: 0.6rem;
                         border-radius: 12px;
@@ -340,145 +316,162 @@
                         padding: 0.4rem;
                     }
                 }
-    
-                &-secondrow {
+            &-secondrow {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+
+                &-col-left {
                     display: flex;
-                    flex-direction: row;
-                    gap: 2rem;
-                    justify-content: center;
-    
-                    &-col-left {
+                    flex-direction: column;
+                    flex-basis: 60%;
+                    max-height: 100%;
+                    align-items: center;
+
+                    &__title {
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        margin-bottom: 1rem;
+                    }
+
+                    .card {
+                        display: flex;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        min-height: 20%;
+                        min-width: 70%;
+                        border-radius: 1rem;
+                        box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
+                        padding: 1rem;
+                        align-items: center;
+                        margin-bottom: 2rem;
+
+                        &-content {
+                            width: 150px;
+                            height: 100px;
+
+                            img {
+                                max-height: 100%;
+                                max-width: 100%;
+                                border-radius: 1rem;
+                            }
+
+                        }
+
+                        &-info {
+                            &-title {
+                                font-size: 1.2rem;
+                                font-weight: 300;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 0.5rem;
+                            }
+
+                        }
+
+
+                    }
+                }
+
+                &-col-right {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: flex-start;
+                    // flex-basis: 40%;
+
+                    .actual-skills {
                         display: flex;
                         flex-direction: column;
-                        flex-basis: 60%;
-                        max-height: 100%;
-                        align-items: center;
-    
-                        &__title {
-                            text-align: center;
+                        // align-items: center;
+                        margin-bottom: 2rem;
+
+                        .skills-title {
+                            margin-bottom: 1rem;
                             font-size: 1.2rem;
                             font-weight: 400;
-                            margin-bottom: 1rem;
+                            text-align: center;
                         }
-    
-                        .card {
-                            display: flex;
-                            background-color: rgba(255, 255, 255, 0.1);
-                            min-height: 20%;
-                            min-width: 70%;
-                            border-radius: 1rem;
-                            box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
-                            padding: 1rem;
-                            align-items: center;
-                            margin-bottom: 2rem;
-    
-                            &-content {
-                                width: 150px;
-                                height: 100px;
-    
-                                img {
-                                    max-height: 100%;
-                                    max-width: 100%;
-                                    border-radius: 1rem;
-                                }
-    
-                            }
-    
-                            &-info {
-                                &-title {
-                                    font-size: 1.2rem;
-                                    font-weight: 300;
-                                    align-items: center;
-                                    justify-content: center;
-                                    margin-bottom: 0.5rem;
-                                }
-    
-                            }
-    
-    
-                        }
-                    }
-    
-                    &-col-right {
-                        // display: flex;
-                        // flex-direction: column;
-                        // align-items: center;
-                        // justify-content: flex-start;
-                        // flex-basis: 40%;
-    
-                        .actual-skills {
-                            display: flex;
-                            flex-direction: column;
-                            // align-items: center;
-                            margin-bottom: 2rem;
-    
-                            .skills-title {
-                                margin-bottom: 1rem;
-                                font-size: 1.2rem;
-                                font-weight: 400;
-                                text-align: center;
-                            }
-    
-                            .skills-container {
-                                margin-bottom: 2.5rem;
-    
-                                ul {
-                                    display: grid;
-                                    list-style: none;
-                                    grid-template-columns: repeat(4, minmax(0, 1fr));
-                                    ;
-                                    gap: 1rem;
-                                    justify-content: center;
-                                    align-items: center;
-    
-                                    .skill {
-                                        img {
-                                            max-width: 70%;
-                                        }
-                                    }
-                                }
-                            }
-    
-                        }
-    
-                        .future-skills {
-                            margin-top: 2.5rem;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-    
-                            &-title {
-                                margin-bottom: 1rem;
-                                font-weight: 400;
-                                font-size: 1.2rem;
-                                text-align: center;
-    
-                            }
-    
-                            &-list {
-                                list-style: none;
+
+                        .skills-container {
+                            margin-bottom: 2.5rem;
+
+                            ul {
                                 display: grid;
                                 list-style: none;
-                                grid-template-columns: 50% 50%;
+                                grid-template-columns: repeat(4, minmax(0, 1fr));
+                                ;
                                 gap: 1rem;
                                 justify-content: center;
                                 align-items: center;
-                                height: 100px;
-                                width: 100px;
-    
-                                .future-skill {
+
+                                .skill {
                                     img {
-                                        max-width: 80%;
+                                        max-width: 70%;
                                     }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .future-skills {
+                        margin-top: 2.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &-title {
+                            margin-bottom: 1rem;
+                            font-weight: 400;
+                            font-size: 1.2rem;
+                            text-align: center;
+
+                        }
+
+                        &-list {
+                            list-style: none;
+                            display: grid;
+                            list-style: none;
+                            grid-template-columns: 50% 50%;
+                            gap: 1rem;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100px;
+                            width: 100px;
+
+                            .future-skill {
+                                img {
+                                    max-width: 80%;
                                 }
                             }
                         }
                     }
                 }
             }
+
         }
-
-
+    }
+}
+//desktop
+@media(min-width:$mq-desktop) {
+    .container {
+        display: flex;
+        font-family: $main-font;
+        height: 90vh;
+        overflow: hidden;
+        app-aside {
+            flex-basis: 20%;
+        }
+        
+        app-aside-profile {
+            flex-basis: 25%;
+        }
+        .hero{
+            flex-basis:55%;
+        }
+    }
 }
 
 

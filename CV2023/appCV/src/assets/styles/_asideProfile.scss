@@ -8,7 +8,9 @@
     height: 90vh;
     color: white;
     border-radius: 0 1rem 1rem 0;
-    
+    font-family: $main-font;
+    font-weight: 100;
+    font-size: 1.2rem;
     // position: relative;
     &-head {
         
@@ -38,7 +40,7 @@
     &-content-mobile-menu{
         position: fixed;
         width: 40%;
-        height: 84.3vh;
+        height: calc(90vh - 3.5rem);
         overflow-y: scroll;
         scroll-behavior: smooth;
         right: 2rem;
@@ -125,7 +127,21 @@
 
 //tablet
 
-
+@media(min-width:$mq-tablet){
+    .aside{
+        
+        &-content-mobile-menu {
+            
+            &-info{
+                img {
+                    max-width: 50%;
+                    max-height: 50%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
 
 //desktop
 
