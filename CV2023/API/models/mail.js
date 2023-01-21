@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 const sendMail = (req) => {
   let body = req.body;
@@ -8,25 +9,18 @@ const sendMail = (req) => {
     port: 587,
     secure: false,
     auth: {
-      user: "jorgedtoro@gmail.com",
-      pass: "%c0k5#!080506",
+      user: process.env.USER,
+      pass: process.env.PASS,
     },
   });
-
+  console.log("pass: " + process.env.PASS);
   const options = {
-    from: "Angular Cv",
+    from: body.email,
     to: "jorgedtoro@gmail",
     subject: body.name,
     text: body.comments,
   };
 
-  //   config.verify(function (error, success) {
-  //     if (error) {
-  //       console.log(error);
-  //     } else {
-  //       console.log("The service is ready");
-  //     }
-  //   });
   config.sendMail(options, function (err, result) {
     if (err) {
       console.log(err);
