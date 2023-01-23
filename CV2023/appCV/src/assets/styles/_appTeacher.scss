@@ -38,6 +38,41 @@
                     margin-right: 0.5rem;
                 }
             }
+        }
+        .carrousel{
+            border:1px solid red;
+            width: 90%;
+            max-width: 120em;
+                
+            &-images{
+                width: 300%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                border:1px solid blue;
+                .img{
+                    width: calc(100% / 3);
+                    height:10vh;
+                }
+            }
+            &-points{
+                width: 100%;
+                padding:1rem;
+                background-color: blue;
+                list-style:none;
+                display: flex;
+                flex-flow: row nowrap;
+                gap:1rem;
+                justify-content: center;
+                align-items: center;
+                &-point{
+                    
+                    background-color: red;
+                    padding: 1em;
+                }
+            }
+            
         }   
     }
     
