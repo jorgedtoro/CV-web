@@ -37,41 +37,80 @@
                 i{
                     margin-right: 0.5rem;
                 }
+                .fa-eye{
+                    color:#7758D1;
+                }
             }
         }
-        .carrousel{
-            border:1px solid red;
-            width: 90%;
-            max-width: 120em;
+        .app{
+            padding: 0.75rem;
+            font-size: 0.9rem;
+            text-align: justify;
+            &-title{
+                margin-bottom: 1rem;
+                span{
+                    color:#7758D1;
+                }
+            }
+            &-description{
+                margin-bottom: 1rem;
                 
-            &-images{
-                width: 300%;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-                border:1px solid blue;
-                .img{
-                    width: calc(100% / 3);
-                    height:10vh;
-                }
             }
-            &-points{
-                width: 100%;
-                padding:1rem;
-                background-color: blue;
-                list-style:none;
-                display: flex;
-                flex-flow: row nowrap;
-                gap:1rem;
-                justify-content: center;
-                align-items: center;
-                &-point{
-                    
-                    background-color: red;
-                    padding: 1em;
-                }
+            &-info-list{
+                margin-bottom: 1rem;
+
             }
+        }
+        
+        &-second-row{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .carrousel{
+                // border:1px solid red;
+                width: 80%;
+                max-width: 120em;
+                
+                overflow-x: hidden;
+                &-images{
+                    width: 300%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    // height: 50vh;
+                    object-fit: cover;
+                    // gap: 1rem;
+                    .img{
+                        border-radius: 1rem;
+                        width: calc(100% / 3);
+                        max-height: 100%;
+                    }
+                }
+                &-points{
+                    width: 50%;
+                    padding:1rem;
+                    // background-color: blue;
+                    list-style:none;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap:1rem;
+                    justify-content: center;
+                    align-items: center;
+                    &-point{
+                        border-radius: 1rem;
+                        border:none;
+                        background-color: $color-btn;
+                        color:$white;
+                        padding: 1em;
+                    }
+                    &-point:hover{
+                        background-color: #7758D1;
+                    }
+                }
+        }
             
         }   
     }
@@ -81,51 +120,40 @@
 
 //tablet
 @media(min-width:$mq-tablet){
-    app-aside {
-        flex-basis: 20%;
-    
-    }
-    .hero{
-        flex-basis:80%;
-    }
+   .container{
     .main{
-
-        &-first-row{
-            font-size: 1rem;
-            padding: 1rem;
-            .app-title {
-                margin-bottom: 1rem;
-            }
-            
-            .app-description {
-                margin-bottom: 1rem;
-            
-            }
-            
-        
-            .app-info-list {
-                margin-bottom: 1rem;
+        .app{
+            padding: 2rem;
+            &-title{
+                text-align: center;
             }
         }
-        &-slider-container {
-            .carrousel {
-                border-radius: 1rem;
-                display: flex;
-                width: 100%;
-                height: 50%;
-
-                overflow-x: scroll;
-                scroll-snap-type: x mandatory;
-
-                img {
-                    flex: 0 0 100%;
-                    max-width: 70%;
-                    object-fit: cover;
-                    scroll-snap-align: center;
+        &-second-row {
+            .carrousel{
+                width: 70%;
+            }
+        }
+    }
+   }
+}
+    
+@media(min-width:$mq-desktop){
+    .container {
+        app-aside {
+            flex-basis: 20%;
+        }
+        .main {
+            // justify-content: center;
+            align-items: center;
+            .app {
+                padding: 1rem;
+                width: 70%;
+                font-size: 1rem;
+                &-title {
+                    text-align: center;
                 }
             }
+            
         }
-       
     }
-    
 }

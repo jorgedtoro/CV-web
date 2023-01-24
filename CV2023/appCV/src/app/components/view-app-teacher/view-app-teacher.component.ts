@@ -1,3 +1,4 @@
+import { PathLocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,21 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-app-teacher.component.scss'],
 })
 export class ViewAppTeacherComponent implements OnInit {
-  translate: any = '';
+  translate: number = 0;
   constructor() {}
 
   ngOnInit(): void {}
 
   carrouselHandler(event: any) {
-    const carrousel = document.querySelector('.carrousel');
+    // const carrousel = document.querySelector('.carrousel');
     const point = event.target.id;
-    let position;
-    if (point == 'prev') {
-      position = 0;
-    } else {
-      position = 1;
+
+    if (point == 'prev' && this.translate != 0) {
+      this.translate = this.translate + 33.3;
     }
-    let translate = position * -33.3;
-    // carrousel?.className.sty
+    if (point == 'next' && this.translate != -66.6) {
+      this.translate = this.translate - 33.3;
+    }
   }
 }
