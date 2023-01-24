@@ -39,38 +39,41 @@
                 }
             }
         }
-        &-first-row{
-            font-size: 0.9rem;
-            text-align: justify;
-            padding: 0.5rem;
-            .app-title{
-                margin-bottom: 0.75rem;
-            }
-            .app-description{
-                margin-bottom: 0.75rem;
-
-            }
-            .app-info-list{
-                list-style: none;
-                margin-bottom: 0.75rem;
-            }
-        }
-        &-slider-container {
-            .carrousel{
-                border-radius: 1rem;
-                display: flex;
-                width: 100%;
+        .carrousel{
+            border:1px solid red;
+            width: 90%;
+            max-width: 120em;
                 
-                overflow-x: scroll;
-                scroll-snap-type: x mandatory;
-                 img{
-                     flex: 0 0 100%;
-                     max-width: 100%;
-                     object-fit: cover;
-                     scroll-snap-align: center;
-                 }
+            &-images{
+                width: 300%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                border:1px solid blue;
+                .img{
+                    width: calc(100% / 3);
+                    height:10vh;
+                }
             }
-        }
+            &-points{
+                width: 100%;
+                padding:1rem;
+                background-color: blue;
+                list-style:none;
+                display: flex;
+                flex-flow: row nowrap;
+                gap:1rem;
+                justify-content: center;
+                align-items: center;
+                &-point{
+                    
+                    background-color: red;
+                    padding: 1em;
+                }
+            }
+            
+        }   
     }
     
     

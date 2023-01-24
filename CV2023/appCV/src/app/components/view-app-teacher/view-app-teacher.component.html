@@ -96,6 +96,30 @@
           alt="project fourth image"
         />
       </div>
+      <div class="main-first-row">Objetivos de la app</div>
+      <div class="carrousel">
+        <div class="carrousel-images" [ngClass]="translate">
+          <img src="#" alt="Imagen 1" class="img" />
+          <img src="#" alt="Imagen 2" class="img" />
+          <img src="#" alt="Imagen 3" class="img" />
+        </div>
+        <ul class="carrousel-points">
+          <li
+            class="carrousel-points-point point"
+            id="prev"
+            (click)="carrouselHandler($event)"
+          >
+            Prev
+          </li>
+          <li
+            class="carrousel-points-point point"
+            id="next"
+            (click)="carrouselHandler($event)"
+          >
+            Next
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
