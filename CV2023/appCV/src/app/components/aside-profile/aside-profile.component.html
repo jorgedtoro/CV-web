@@ -5,16 +5,16 @@
     </div>
     <div class="aside-head-content">
       <a href="https://github.com/jorgedtoro" target="_blank">
-        <img src="assets/images/github.svg" alt="github" />
+        <i class="fa-brands fa-github"></i>
       </a>
       <a
         href="https://es.linkedin.com/in/jorge-de-toro-695b90bb"
         target="_blank"
       >
-        <img src="assets/images/Linkedin.svg" alt="Linkedin" />
+        <i class="fa-brands fa-linkedin-in"></i>
       </a>
       <a [routerLink]="['/contact']"
-        ><img src="assets/images/mail.svg" alt="mail" />
+        ><i class="fa-solid fa-envelopes-bulk"></i>
       </a>
       <a href="assets/Resume.pdf" class="btn" download="Resume.pdf"
         ><img src="assets/images/Vector.svg" alt=""
@@ -40,7 +40,26 @@
     </div>
   </div>
   <div class="aside-cards">
-    <h2 class="aside-cards-title">New Followers</h2>
+    <div class="aside-cards avatar">
+      <h2 class="aside-cards-title">New Followers</h2>
+      <div class="avatars">
+        <div class="avatars__item">
+          <div class="avatars__image">
+            <img src="assets/images/asideProfile/follower1.jfif" alt="" />
+          </div>
+        </div>
+        <div class="avatars__item">
+          <div class="avatars__image">
+            <img src="assets/images/asideProfile/follower2.jfif" alt="" />
+          </div>
+        </div>
+        <div class="avatars__item">
+          <div class="avatars__image">
+            <img src="assets/images/asideProfile/follower3.jfif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="aside-cards-card">
       <div class="aside-cards-card-content">
         <img src="assets/images/asideProfile/FSD.svg" alt="icon" />

@@ -11,7 +11,9 @@ export const experience: Experience[] = [
       'Tengo conocimientos de FrontEnd con HTML, CSS , JavaScript, TypeScript y Angular',
     textThree:
       'Tengo conocimientos de BackEnd con Node JS, Express JS, SQL y MongoDB',
-    textFour: 'Actualmente estoy estudiando React, Docker, AWS y Azure',
+    textFour:
+      'He trabajo con procesos git: comandos básicos, branch, pull request, merge, resolución de conflictos ...',
+    textFive: 'Actualmente estoy estudiando React, Docker, AWS y Azure',
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ export const experience: Experience[] = [
       'Me encargo del mantenimiento de diferentes programas y se me tiene en cuenta para el desarrollo de nuevas herramientas a nivel empresa',
     textFour:
       'He desarrollado scripts en SAS para el preprocesamiento de datos',
+    textFive: 'Automatización de tareas con Python',
   },
   {
     id: 3,

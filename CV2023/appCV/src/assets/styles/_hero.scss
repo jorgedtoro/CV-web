@@ -144,6 +144,9 @@
                         font-size: 0.7rem;
                     }
                 }
+                .card:hover {
+                    scale: (1.05);
+                }
             }
             &-col-right{
                 display: flex;

@@ -138,39 +138,63 @@
     
     };
 }
+//tablet
+@media(min-width:$mq-tablet){
+    .container{
+        app-aside {
+                z-index:1
+            }
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card::-webkit-scrollbar {
+                    display: none;
+                }
+            .card{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 3rem;
+                max-height: 60vh;
+                flex-basis:40%;
+                overflow-y: scroll;
+                z-index:0;
+                &-body {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%
+                }
+            }
+        }
+        .modal-body {
+            padding: 5rem;
+            z-index:2;
+            .modal-content {
+                width: 50%;
+
+                .modal-body-subtitle,
+                .modal-body-text,
+                .modal-body-tasks {
+                    margin-bottom: 2rem,
+                }
+
+            }
+        }
+    }
+}
 //desktop
 @media(min-width:$mq-desktop) {
    .container{
-    app-aside{
-        flex-basis:20%;
-    }
-     .main{
-       display: flex;
-       flex-direction: row;
-       
-       justify-content: flex-start;
-       flex-basis:80%;
-       .card::-webkit-scrollbar {
-            display: none;
+        app-aside{
+            flex-basis:20%;
         }
-       .card{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-        max-height: 60vh;
-        flex-basis: 25%;
-        overflow-y: scroll;
-        &-body{
-            display: flex;
-            flex-direction: column;
-            // justify-content: space-between;
-            height: 100%
-            
-            
+        .main{
+            flex-basis: 80%;
+            .card{    
+                flex-basis: 20%; 
+            }
         }
-       }
-       
-    }
    }
 };
